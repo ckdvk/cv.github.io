@@ -4,9 +4,9 @@ import { renderResearchInfo } from "../utils/render.js";
 
 
 
-const pathCVResearch = '../../../items/research.tex'
+const pathCVResearch = 'items/research.tex'
 
-const pathReferences = '../../../References.bib'
+const pathReferences = 'References.bib'
 
 const researchItems = fetchResearchItems(pathCVResearch,pathReferences)
 

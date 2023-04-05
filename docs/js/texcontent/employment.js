@@ -2,7 +2,7 @@
 // imports the fetch library from the utils folder
 import { fetchTexData } from '../utils/fetch.js';
  
-        const texFilePath = '../../../items/employment.tex'
+        const texFilePath = 'items/employment.tex'
         const environmentName = 'employment'
         const fieldsList = ['position', 'institution', 'startDate', 'endDate', 'description']
         const data = fetchTexData(texFilePath, environmentName, fieldsList)

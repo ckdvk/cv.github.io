@@ -1,9 +1,9 @@
 import { fetchSpacedTex } from "../utils/fetch.js";
 
-const techFamiliarSkillsPath = "../../../items/tech_familiarskills.tex";
-const techProficientSkills =  "../../../items/tech_proficientskills.tex";
-const softStrongSkills =  "../../../items/soft_strongskills.tex";
-const softBasicSkills =  "../../../items/soft_basicskills.tex";
+const techFamiliarSkillsPath = "items/tech_familiarskills.tex";
+const techProficientSkills =  "items/tech_proficientskills.tex";
+const softStrongSkills =  "items/soft_strongskills.tex";
+const softBasicSkills =  "items/soft_basicskills.tex";
 
 console.log('executing skills.js')
 
