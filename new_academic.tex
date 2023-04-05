@@ -1,0 +1,184 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% I wanted a more consistent way of creating CVs/resumes,
+% so I made a few environments for adding content.
+% There's {education}, {research_exp}, and {employment}.
+% They take certain arguments, such as start and end dates,
+% which are automatically placed into position on the
+% document. Use a separate instance of each for each item
+% on your CV.
+% Publications are rendered with \fullcite, which pulls
+% bibtex items from references.bib.
+%
+% Published by Hannah W Richards
+% Creative Commons CC BY 4.0 License
+% Originally published September 2019
+% Revised March 2020
+% Revised November 2020
+%
+% hannah.willow.richards@gmail.com
+% Please use this template as you wish, and feel free to
+% send me an email if you were able to put it to good use!
+% I always like to hear from people. If you modify and
+% republish the template, please attribute me.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{style_classes/cv_new_academic}
+\usepackage{enumitem}
+\usepackage[top=0.2in, left=0.3in, right=0.5in, bottom=0.25in]{geometry}%
+\usepackage[backend=bibtex8,maxbibnames=99,style=numeric, backref=true]{biblatex}
+\usepackage{hyperref}
+\usepackage{csquotes}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{bookmark}
+\usepackage{multicol}
+
+
+
+% \usepackage{pagecolor}% http://ctan.org/pkg/{pagecolor,lipsum}
+% \pagecolor{darkgray}
+
+
+
+
+
+
+ 
+\newcommand{\tc}[2]{\textcolor{#1}{#2}}
+
+ 
+%\definecolor{niceblue}{RGB}{34,212,182}
+\definecolor{darkgray}{RGB}{76,76,76}
+\definecolor{niceblue}{RGB}{31,170,137}
+\definecolor{nicegray}{RGB}{180,180,180}
+\definecolor{nicegraydark}{RGB}{109,109,109}
+\definecolor{whitegray}{RGB}{232,232,232}
+
+
+
+
+% You can place bibtex citations for your publications in the references.bib file, which is called here. You can download bibtex citations for your publications so that you don't have to type all the information in for each one.
+\bibliography{References}
+
+\begin{document}
+ 
+\begin{center}
+    %	    \textit{R\'esum\'e}\\
+            \textit{Curriculum Vitae}\\
+            {\Large \textbf{Javier Mart\'inez Perales}\par}
+            \href{javicemarpe@gmail.com}{javicemarpe(at)gmail.com}\\
+            %(+34) 647243049\\
+            \href{http://sites.google.com/view/javiermartinez/home}{http://sites.google.com/view/javiermartinez/home}
+        \end{center}
+        \vspace{-0.15in}
+        \rule{\textwidth}{1pt}
+        \vspace{0.05in}
+
+ 
+ 
+
+        % \noindent
+        % \begin{minipage}[c]{0.1\linewidth} 
+        % FECHAS AQUI asdgfsgsdfgsdfgsdfg
+        % \end{minipage} % no space if you would like to put them side by side
+        % \begin{minipage}[c]{0.9\linewidth}
+        % INFO sdfgsdfgsdfgsdfgsdfgssdfgqa3e4yghtwertyjedtyjkmteykjdtyjdr juer jdtyy jtedyyeyjfg xfxcg hn b cvghnfgjhfghjfg hjnr h
+        % \end{minipage}
+
+  
+        \begin{Section}
+            {Employment}
+          \end{Section}
+
+          \input{items/employment.tex}
+        
+
+ 
+
+
+
+  \begin{Section}
+    {Education}
+  \end{Section}
+ 
+  \input{items/education}
+ 
+
+
+ \newpage 
+
+\begin{Section}
+    {Research} 
+  \end{Section}
+ 
+
+ \input{items/research}
+
+ \begin{Section}
+    {Dissemination} 
+  \end{Section}
+
+    \input{items/dissemination}
+
+    \begin{Section}
+        {Skills}
+    \end{Section}
+
+{\large\textbf{\textsc{Technical skills:}}\\}
+{\large\textbf{ {Proficient with:}}\\}
+\input{items/tech_proficientskills.tex}\\ 
+{\large\textbf{ {Familiar with:}}\\}
+\input{items/tech_familiarskills.tex}
+ \begin{center} \qquad\rule{0.5\paperwidth}{0.5pt} 
+\end{center}
+
+{\large\textbf{\textsc{Soft skills:}}\\}
+{\large\textbf{ {Strong:}}\\}
+\input{items/soft_strongskills}\\
+{\large\textbf{ {Basic knowledge:}}\\}
+\input{items/soft_basicskills}\\
+
+\newpage
+
+\begin{Section}
+  {Associations}
+\end{Section}
+
+\input{items/associations}
+
+
+\begin{Section}
+  {Research stays and visits}
+\end{Section}
+
+\input{items/research_stays}
+
+\begin{Section}
+  {Talks and posters}
+\end{Section}
+
+\input{items/talks-posters}
+
+
+
+
+
+\begin{Section}
+  {Certified linguistic skills}
+\end{Section}
+
+
+\input{items/languages}
+
+
+\begin{Section}
+  {Others}
+\end{Section}
+
+
+\input{items/others}
+
+
+
+\end{document}

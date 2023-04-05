@@ -1,0 +1,30 @@
+[
+  {
+    "position": "Substitute Teaching Tutor",
+    "institution": "\\href{https://www.uma.es/}{University of Málaga}",
+    "startDate": "Feb 2022",
+    "endDate": "Present",
+    "description": "Teaching differential and integral calculus, vector calculus, differential equations and probability to undergraduate students in the University of Malaga's bachelor's degree in Chemistry. See the program of the current courses \\href{https://oas.sci.uma.es:8443/ht/2022/ProgramasAsignaturas_Titulacion_5004_AsigUMA_51634.pdf}{here} and \\href{https://oas.sci.uma.es:8443/ht/2022/ProgramasAsignaturas_Titulacion_5004_AsigUMA_51639.pdf}{here}."
+  },
+  {
+    "position": "Lead Data Scientist",
+    "institution": "\\href{https://studentsuccess.app/es/}{Student Success}",
+    "startDate": "Sept 2021",
+    "endDate": "Apr 2022",
+    "description": "Data science with data from Google Classroom. Analysis of  engagement of students, STEM-HASS profile of students, prediction of  califications..."
+  },
+  {
+    "position": "Postdoctoral Visiting Fellow",
+    "institution": " \\href{http://www.bcamath.org/es/}{Basque Center for Applied Mathematics}",
+    "startDate": "Feb 2021",
+    "endDate": "Sept 2021",
+    "description": "Harmonic Analysis and Differential Equations: New Challenges. In this project we studied multifractality and intermmittency properties of certain stochastic processes coming from physics. We needed ideas from Harmonic Analysis, Number Theory and Probability theory to study these topics"
+  },
+  {
+    "position": "Predoctoral Researcher",
+    "institution": " \\href{http://www.bcamath.org/es/}{Basque Center for Applied Mathematics}",
+    "startDate": "Sept 2016",
+    "endDate": "Dec 2020",
+    "description": "During these years I studied different problems on Harmonic Analysis, from singular integral operators to Poincaré-Sobolev inequalities both in Euclidean and abstract metric spaces. This culminated in the development of a new method to get Poincaré-Sobolev inequalities in different settings. This is collected in my thesis \\href{https://bird.bcamath.org/handle/20.500.11824/1206}{dissertation}"
+  }
+]

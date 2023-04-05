@@ -1,0 +1,161 @@
+body {
+    background-color: rgb(50, 50, 50);
+}
+
+.hrstyle {
+    border: 1.8px solid #1faa89;
+    width: 98%;
+}
+
+.titlenamestyle {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    color: #157660;
+    /* white-space: nowrap; */
+    word-spacing:-20px;
+
+    /* letter-spacing: 1px; */
+}
+
+
+.subtitlenamestyle {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  color: #636363;
+  /* white-space: nowrap; */
+  word-spacing:-5px;
+  padding-left: 20px;
+
+  /* letter-spacing: 1px; */
+}
+
+.titlemailstyle {
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    color: #1faa89;
+    hyphens: auto;
+}
+
+.sectionname {
+    font-family:  monospace;
+    /* MONOSPACE SANS SERIF */
+/* always capital letters */
+    text-transform: uppercase;
+    color: #157660;
+}
+
+
+
+.headercontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+  
+  .leftcolumn {
+    float: left;
+    width: 50%;
+    margin-right: 5%;
+    /* adjust margin to center content */
+  }
+  
+  .rightcolumn {
+    float: right;
+    width: 50%;
+    margin-left: 5%; /* adjust margin to center content */ 
+  }
+  
+
+  .leftcolumnheader {
+    float: left;
+    width: 85%;
+    margin-right: 5%;
+    /* adjust margin to center content */
+  }
+  
+  .rightcolumnheader {
+    float: right;
+    width: 15%;
+    margin-left: 0%;
+    margin-right: 6%  /* adjust margin to center content */ 
+  }
+
+
+
+.sectioncontent {
+    font-family: 'Courier New', Courier, monospace;
+    color: #808080;
+    padding-left: 20px;
+    /* content keeps inside parent to fit the column */
+    
+}
+
+.itemtitle {
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    font-weight: bolder;
+    margin-left: inherit;
+    padding-left: 20px;
+}
+
+.itemcontent {
+    font-family: 'Courier New', Courier, monospace;
+    color: #808080;
+    margin-left: inherit;
+    padding-left: 20px;
+    /* content keeps inside parent to fit the column */
+    /* text always ends with a white comma */
+}
+
+.researchItem {
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    margin-left: inherit;
+    padding-left: 20px;
+
+    /* ALSO SHOWS A BULLET AT THE BEGINNING */
+    
+    /* content keeps inside parent to fit the column */
+    /* text always ends with a white comma */
+}
+
+.skill-type {
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    font-weight: bolder;
+    margin-left: inherit;
+    padding-left: 10px;
+}
+
+.skill-level {
+    font-family: 'Courier New', Courier, monospace;
+    color: #FFFFFF;
+    margin-left: inherit;
+    padding-left: 30px;
+    /* content keeps inside parent to fit the column */
+    /* text always ends with a white comma */
+}
+
+.skills-list {
+    font-family: 'Courier New', Courier, monospace;
+    color: #808080;
+    margin-left: inherit;
+    padding-left: 40px;
+    /* content keeps inside parent to fit the column */
+    /* text always ends with a white comma */
+}
+
+.olum-cursor::after {
+  background: white;
+}

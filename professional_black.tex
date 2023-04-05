@@ -1,0 +1,205 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% I wanted a more consistent way of creating CVs/resumes,
+% so I made a few environments for adding content.
+% There's {education}, {research_exp}, and {employment}.
+% They take certain arguments, such as start and end dates,
+% which are automatically placed into position on the
+% document. Use a separate instance of each for each item
+% on your CV.
+% Publications are rendered with \fullcite, which pulls
+% bibtex items from references.bib.
+%
+% Published by Hannah W Richards
+% Creative Commons CC BY 4.0 License
+% Originally published September 2019
+% Revised March 2020
+% Revised November 2020
+%
+% hannah.willow.richards@gmail.com
+% Please use this template as you wish, and feel free to
+% send me an email if you were able to put it to good use!
+% I always like to hear from people. If you modify and
+% republish the template, please attribute me.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{style_classes/cv_black}
+\usepackage{enumitem}
+\usepackage[top=0.2in, left=0.3in, right=0.3in, bottom=1.25in]{geometry}%
+\usepackage[backend=bibtex8,maxbibnames=99,style=numeric, backref=true]{biblatex}
+\usepackage{hyperref}
+\usepackage{csquotes}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{bookmark}
+\usepackage{multicol}
+% \usepackage[none]{hyphenat}
+
+
+
+\usepackage{pagecolor}% http://ctan.org/pkg/{pagecolor,lipsum}
+\pagecolor{darkgray}
+
+ 
+
+
+
+
+ 
+\newcommand{\tc}[2]{\textcolor{#1}{#2}}
+
+ 
+%\definecolor{niceblue}{RGB}{34,212,182}
+\definecolor{darkgray}{RGB}{76,76,76}
+\definecolor{niceblue}{RGB}{31,170,137}
+\definecolor{nicegray}{RGB}{180,180,180}
+\definecolor{nicegraydark}{RGB}{109,109,109}
+\definecolor{whitegray}{RGB}{232,232,232}
+
+
+
+
+% You can place bibtex citations for your publications in the references.bib file, which is called here. You can download bibtex citations for your publications so that you don't have to type all the information in for each one.
+\bibliography{References}
+
+\begin{document}
+	\begin{center}
+%	    \textit{R\'esum\'e}\\
+        %\textit{Curriculum Vitae}\\
+		\begin{flushleft}
+      \setBoldness{1}
+      {\Huge   {\bfseries \textcolor{whitegray}{\{}\textcolor{niceblue}{Javier}\hspace{0.5pt}\tc{white}{:}\hspace{0.5pt}\textcolor{nicegray}{ Martínez Perales}\textcolor{whitegray}{\}}}}\tc{niceblue}{\hfill\href{mailto:javicemarpe@gmail.com}{javicemarpe(at)gmail.com} }\par
+    \end{flushleft}
+	\tc{niceblue}{
+		\hfill \\%(+34) 647243049\\
+		{\Large\textcolor{nicegraydark}{Data Science \textcolor{nicegray}{\&} Harmonic Analysis}}\hfill  \href{http://sites.google.com/view/javiermartinez/home}{Personal webpage}
+	}
+	\end{center}
+	%\vspace{-0.15in}
+	\tc{niceblue}{\rule{\textwidth}{2pt}}
+	\vspace{0.05in}
+
+% The education environment is used like:
+%
+%   \begin{education}{start date}{end date}{degree}{field of study}{school name}{school location}{GPA}
+%
+%       Extra details of degree.
+%
+%   \end{education}
+
+
+%\vspace{-0.5cm}
+
+
+
+
+
+
+	\begin{multicols}{2}
+
+		\begin{sectionname}
+			{EMPLOYMENT}
+			{
+			\input{items/employment}
+			}
+		\end{sectionname}
+	
+
+		\begin{listlikeenv}
+			{SKILLS}
+			{
+				\begin{skills}
+					{TECHNICAL SKILLS}
+					{\tc{white}{Proficient with:}\\
+					\input{items/tech_proficientskills}\\
+					\tc{white}{Familiar with:}\\
+					\input{items/tech_familiarskills}}
+				\end{skills}
+
+				\begin{firstskills}
+					{SOFT SKILLS}
+					{\tc{white}{Strong:}\\
+					\input{items/soft_strongskills}\\
+					\tc{white}{Basic knowledge:}\\
+					\input{items/soft_basicskills}}\end{firstskills}}
+		\end{listlikeenv}
+
+		 
+		% \columnbreak
+
+		\begin{sectionname}
+			{EDUCATION}
+			{
+		\input{items/education}
+		}
+		\end{sectionname}
+
+		\begin{listlikeenv}
+			{RESEARCH}
+			{\footnotesize \vspace{-0.5cm}
+				\tc{white}{
+					\input{items/research}
+                }
+			}
+		\end{listlikeenv}
+		\begin{listlikeenv}
+			{ABOUT ME}
+			{   
+				\tc{white}{INTERESTS:}\\
+				\tc{nicegray}{Technology $\bullet$ Programming $\bullet$ Mathematics}\\
+				\tc{white}{ASSOCIATIONS:}
+				\tc{nicegray}{
+					\input{items/associations}
+					}
+			}
+		\end{listlikeenv}
+
+
+
+\end{multicols}
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

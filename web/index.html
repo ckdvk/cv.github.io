@@ -1,0 +1,178 @@
+<!-- style from file style.css in the root -->
+
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- darkgray background -->
+</head>
+
+<body>
+
+
+    <div>
+
+        <head>
+            <title>
+                My CV
+            </title>
+        </head>
+
+        <body>
+            <header class="headercontainer">
+                <!-- uses style .namestyle in the style.css file -->
+            <div class="leftcolumnheader">
+                <h1 id ="title" class="titlenamestyle">
+                    <!-- the above style, but in css -->
+                    <span style="color: white;">
+                        {
+                        </span>
+                    "Javier"
+                    <span style="color: white;">
+                        :
+                    </span> 
+                    <span style="color: darkgrey">
+                        "Mart&iacute;nez &ThinSpace;Perales"
+                    </span>
+                    <span style="color: white;">
+                        }
+                    </span>
+                </h1>
+
+                <h2 id="subtitle" class="subtitlenamestyle">
+                    Harmonic Analysis, Data&nbsp;Science <br><span style="color: rgb(149, 149, 149)">&</span> Software Development
+                </h2>
+            </div>
+            <div class="rightcolumnheader">
+                <!-- hide the underline and colour of the link -->
+                <a class="titlemailstyle" href="mailto:jmartinezperales@uma.es">
+                    <br>
+                    jmartinez&#8203;perales&#8203;@uma.es
+                    <!--the above, but hyphenable -->
+                </a>
+                <a class="titlemailstyle" href="https://sites.google.com/view/javiermartinez/home">
+                    <br>
+                    <br>
+                    
+                    <!-- a tabulation -->
+                    Research page
+                </a>
+            </div>
+            <!-- a horizontal line covering the whole screen -->
+
+
+
+            
+
+            </header>
+            <main>
+                <br>
+                <hr class="hrstyle">
+
+                <div class = "container">
+                    <div class = "leftcolumn">
+                        <section id="employment">
+                            <h1 class = "sectionname">
+                                EMPLOYMENT<span style="color:white">:{</span>
+                            </h1>
+                            <div    id="employmentItems">
+                            </div>
+                            <h1>
+                                <span style="color:white; font-family: 'Courier New', Courier, monospace;">
+                                    }
+                                </span>
+                            </h1>
+                        </section>
+                        
+                        <section  id="skills">
+                            <h1 class = "sectionname">
+                                SKILLS<span style="color:white">:[ {</span>
+                            </h1>
+                            <div id="skillsItems">
+
+                            
+                            </div>
+                        <h1>
+                            <span style="color:white; font-family: 'Courier New', Courier, monospace;">
+                             } ]
+                            </span>
+                        </h1>
+                        </section>
+
+                    </div>
+
+                    <div class = "rightcolumn">
+
+                        <section id="education">
+
+                            <h1 class = "sectionname">
+                                EDUCATION<span style="color:white">:{</span>
+                            </h1>
+                            <div id="educationItems">
+                            </div>
+                            <h1>
+                                <span style="color:white; font-family: 'Courier New', Courier, monospace;">
+                                    }
+                                </span>
+                            </h1>
+
+                        </section>
+                        
+                        
+                        <section   id="research">
+                            <h1 class = "sectionname">
+                                RESEARCH
+                            </h1>
+                            <div id="researchItems">
+                                
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <p>
+                    <!-- My First Footer -->
+                </p>
+            </footer>
+        </body>
+
+    </div>
+
+
+
+
+
+
+    <script src="js/effects/olumn-writer.min.js"></script>
+    <script>
+        new OlumWriter({
+        container: document.getElementById("subtitle"),
+        sentences: ["Harmonic Analysis", "Data Science", "Software Development"],
+        interval: 3000, // optional (time between each sentence)
+        speed: 1000, // optional (speed of writing each sentence)
+        reverse: false, // optional (enable/disable backward writing), default is false
+        
+    }, );
+    </script>
+
+    <script type="module"  src="js/texcontent/skills.js"></script>
+    <script type="module"  src="js/texcontent/research.js"></script>
+    <script type="module"  src="js/texcontent/employment.js"></script>
+    <script type="module"  src="js/texcontent/education.js"></script>
+    <script src="js/itemscript.js"></script>
+
+    <hr class="hrstyle">
+</body>
+
+
+
+
+</html>
+
+

@@ -1,0 +1,694 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% I wanted a more consistent way of creating CVs/resumes,
+% so I made a few environments for adding content.
+% There's {education}, {research_exp}, and {employment}.
+% They take certain arguments, such as start and end dates,
+% which are automatically placed into position on the
+% document. Use a separate instance of each for each item
+% on your CV.
+% Publications are rendered with \fullcite, which pulls
+% bibtex items from references.bib.
+%
+% Published by Hannah W Richards
+% Creative Commons CC BY 4.0 License
+% Originally published September 2019
+% Revised March 2020
+% Revised November 2020
+%
+% hannah.willow.richards@gmail.com
+% Please use this template as you wish, and feel free to
+% send me an email if you were able to put it to good use!
+% I always like to hear from people. If you modify and
+% republish the template, please attribute me.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{style_classes/cv}
+\usepackage{enumitem}
+\usepackage[top=0.2in, left=0.3in, right=0.3in, bottom=1.25in]{geometry}%
+\usepackage[backend=bibtex8,maxbibnames=99,style=numeric, backref=true]{biblatex}
+\usepackage{hyperref}
+\usepackage{csquotes}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{bookmark}
+\usepackage{multicol}
+
+
+
+\usepackage{pagecolor}% http://ctan.org/pkg/{pagecolor,lipsum}
+%\pagecolor{darkgray}
+
+
+
+
+
+
+ 
+\newcommand{\tc}[2]{\textcolor{#1}{#2}}
+
+ 
+%\definecolor{niceblue}{RGB}{34,212,182}
+\definecolor{darkgray}{RGB}{76,76,76}
+\definecolor{niceblue}{RGB}{31,170,137}
+\definecolor{nicegray}{RGB}{180,180,180}
+\definecolor{whitegray}{RGB}{232,232,232}
+
+
+
+
+% You can place bibtex citations for your publications in the references.bib file, which is called here. You can download bibtex citations for your publications so that you don't have to type all the information in for each one.
+\bibliography{References}
+
+\begin{document}
+	\begin{center}
+%	    \textit{R\'esum\'e}\\
+        %\textit{Curriculum Vitae}\\
+		\begin{flushleft}
+      \setBoldness{1}
+      {\Huge   {\bfseries \textcolor{whitegray}{\{}\textcolor{niceblue}{Javier}\hspace{0.5pt}:\hspace{0.5pt}\textcolor{nicegray}{ Martínez Perales}\textcolor{whitegray}{\}}}}\tc{niceblue}{\hfill\href{mailto:javicemarpe@gmail.com}{javicemarpe(at)gmail.com} }\par
+    \end{flushleft}
+	\tc{niceblue}{
+		\hfill (+34) 647243049\\
+		\hfill  \href{http://sites.google.com/view/javiermartinez/home}{Personal webpage}
+	}
+	\end{center}
+	\vspace{-0.15in}
+	\tc{niceblue}{\rule{\textwidth}{2pt}}
+	\vspace{0.05in}
+
+% The education environment is used like:
+%
+%   \begin{education}{start date}{end date}{degree}{field of study}{school name}{school location}{GPA}
+%
+%       Extra details of degree.
+%
+%   \end{education}
+
+
+%\vspace{-0.5cm}
+
+
+
+
+
+
+	\begin{multicols}{2}
+
+		\begin{sectionname}
+			{EMPLOYMENT}
+			{
+				\input{items/employment}
+			}
+		\end{sectionname}
+	
+
+		\begin{listlikeenv}
+			{SKILLS}
+			{
+				\begin{skills}
+					{TECHNICAL SKILLS}
+					{\tc{black}{Proficient with:}\\
+					\input{items/tech_proficientskills}\\
+					\tc{black}{Familiar with:}\\
+					\input{items/tech_familiarskills}}
+				\end{skills}
+
+				\begin{firstskills}
+					{SOFT SKILLS}
+					{\tc{black}{Strong:}\\
+					\input{items/soft_strongskills}\\
+					\tc{black}{Basic knowledge:}\\
+					\input{items/soft_basicskills}}
+				\end{firstskills}
+			}
+		\end{listlikeenv}
+
+		 
+		% \columnbreak
+
+		\begin{sectionname}
+			{EDUCATION}
+			{
+				\input{items/education}
+		}
+		\end{sectionname}
+
+		\begin{listlikeenv}
+			{RESEARCH}
+			{\footnotesize \vspace{-0.5cm}
+			\input{items/research}	
+			}
+		\end{listlikeenv}
+		\begin{listlikeenv}
+			{ABOUT ME}
+			{   
+				INTERESTS:\\
+				\tc{nicegray}{Technology $\bullet$ Programming $\bullet$ Mathematics}\\
+				ASSOCIATIONS:
+				\tc{nicegray}{\input{items/associations}}
+			}
+		\end{listlikeenv}
+
+
+
+\end{multicols}
+
+ 
+ 
+
+
+
+
+
+% 	\textbf{Employment}\\
+
+%   \begin{teaching}{Feb 2021}{Present}{Substitute Teaching Tutor}{\href{https://www.uma.es/}{Universidad de Málaga}}{Matemáticas para químicos II}
+% 	\end{teaching}
+% 	\vspace{-0.3in}
+
+
+
+% 	\begin{employment}{Sept 2021}{Apr 2021}{Lead Data Scientist}{ \href{https://studentsuccess.app/es/}{Student Success}}{Data science with data from Google Classroom. Analysis of   \tabto{\spacing}engagement of students, STEM-HASS profile of students, prediction of\tabto{\spacing} califications...}
+% 	\end{employment}
+% 	\vspace{-0.3in}
+
+
+
+% 	\begin{employment}{Feb 2021}{Sept 2021}{Postdoctoral Visiting Fellow}{ \href{http://www.bcamath.org/es/}{Basque Center for Applied Mathematics}}{Harmonic Analysis and Differential Equations: New Challenges}
+% 	\end{employment}
+% 	\vspace{-0.3in}
+
+% 	\textbf{Education}\\
+
+% 	\begin{education}{Sept 2016}{Dec 2020}{PhD degree}{Mathematics and Statistics}{Basque Center for Applied Mathematics}{in Bilbao, Spain}
+% \textbf{PhD thesis:}  \href{https://bird.bcamath.org/handle/20.500.11824/1206}{Generalized Poincar\'e-Sobolev inequalities}
+% 	\end{education}
+% 	\vspace{0.2in}
+	
+% 	\begin{education}{Sept 2015}{Jul 2016}{Master's degree}{Mathematics}{Universities of Almer\'ia, C\'adiz, Granada, Ja\'en and M\'alaga}{in \\\tabto{\spacing}M\'alaga, Spain}
+% 	\textbf{Master's thesis:}  \href{https://drive.google.com/file/d/0B-XkTHdwwkV5SDBrS2RiY0hhUjg/view?usp=sharing}{Factorizaci\'on y ceros de funciones en espacios de funciones anal\'iticas}
+% 	\end{education}
+% 	\vspace{0.2in}
+
+
+% 	\begin{education}{Sept 2011}{Jul 2015}{Bachelor's degree}{Mathematics}{University of M\'alaga}{in \\\tabto{\spacing}M\'alaga, Spain}
+% 	\textbf{Bachelor's thesis:}  \href{https://drive.google.com/file/d/0B-XkTHdwwkV5QXYydm1BMHFCeHM/view?usp=sharing}{La integral de Henstock-Kurzweil}
+% 	\end{education}
+% 	\vspace{0.2in}
+
+
+	
+% % The research_exp environment is used like:
+% %
+% %   \begin{research_exp}{start date}{end date}{title}{place}{advisor}
+% %
+% %       Description of research.
+% %
+% %   \end{research_exp}
+	
+	
+	
+	
+% 	\newpage
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+% %	
+% %	\textbf{Research}\\
+% %	\begin{research_exp}{February 2017}{August 2019}{Signal--Background Discrimination in EXO--200}{University of Alabama, Tuscaloosa, AL}{Igor Ostrovskiy}
+% %		\begin{itemize}
+% %    	    \item I trained convolutional neural networks (CNNs) for recognizing neutrinoless double beta decay signals against background events. I found that they had higher accuracy than conventional methods, such as binary decision trees, in my preliminary results.
+% %    	    \item I administered two Linux GPU computing servers. My duties included managing user accounts, data, hardware, and software on these systems.
+% %    	    \item I worked on statistically interpreting an event-by-event classifier (e.g., a CNN) to calculate the sensitivity of the method and confidence intervals.
+% %    	    \item I gained experience working with photomultiplier tubes and digitizers for a muon detection project.
+% %        \end{itemize}
+% %	\end{research_exp}
+% %    
+% %    \begin{research_exp}{May 2019}{July 2019}{Neutrino Physics REU}{Duke University, Durham, NC}{Kate Scholberg}
+% %        \begin{itemize}
+% %            \item I searched for candidates for neutrino detector materials based on their charged--current interaction energy thresholds.
+% %            \item I found two isotopes, $^{181}$Ta and $^{160}$Gd, that have desirable properties. I ran preliminary calculations for interaction cross sections and event rates, greenlighting further study.
+% %        \end{itemize}
+% %    \end{research_exp}
+% %    
+% %    \begin{research_exp}{May 2018}{August 2018}{Experimental Nuclear Structure REU}{Vanderbilt University, Nashville, TN}{Joseph Hamilton}
+% %        \begin{itemize}
+% %            \item Using double and triple coincidence counting, I measured the frequency at which $^{252}$Cf spontaneously fissions into certain isotopes. I performed these measurements for two separate element pairs: tellurium--palladium and strontium--neodymium.
+% %            \item I tabulated my results into yields matrices, finding that the most common number of neutrons evaporated during these decays was 3 or 4, with immeasurably small yields above 5 neutrons. This is evidence that a previously studied case, that of barium--molybdenum, is unique since it has an unusually high probability of evaporating between 7 and 10 neutrons.
+% %        \end{itemize}
+% %    \end{research_exp}
+% %    \vspace{0.2in}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+% % The employment environment is used like:
+% %
+% %   \begin{employment}{start date}{end date}{position}{place of employment}
+% %
+% %       Description of employment.
+% %
+% %   \end{research_exp}
+	
+% %	\textbf{Teaching}\\
+% %	\begin{employment}{January 2017}{December 2019}{Learning Assistant}{Department of Physics and Astronomy, University of Alabama}
+% %	    I worked as an undergraduate teaching assistant in introductory physics courses from the spring of my freshman year until my senior year. I assisted with labs, proctored exams, and presented extra credit problems for the classes.
+% %	\end{employment}
+% %	\vspace{0.2in}
+
+
+
+
+
+
+
+
+
+
+	
+% 	% Pull in your citations from references.bib, referring to them by their catchy names.
+% 	\begin{adjustwidth}{}{\rightedge}
+% 	\textbf{Publications}
+%     \begin{enumerate}
+%       \item \fullcite{hurri2022bbm}
+%             \item \fullcite{martinez2020quantitative}
+%       \item  \fullcite{kosz2022maximal}
+%         %\item \fullcite{Martinez2020-2}
+%         \item \fullcite{Martinez2020}
+%         \item \fullcite{Cejas2019}
+% 		 \item \fullcite{Accomazzo2017}
+      
+%     \end{enumerate}
+%     \vspace{0.2in}
+    
+ 
+% 	\textbf{Dissemination works}
+%     \begin{enumerate}
+%         \item \fullcite{TEMAT}. \href{https://temat.es/monograficos/article/view/vol1-p47}{Link to the paper}
+%         \item \fullcite{TEMAT2}. \href{https://temat.es/articulo/2017-p15}{Link to the paper}
+ 
+%     \end{enumerate}
+%     \vspace{0.2in}   
+    
+
+%     \textbf{Associations}\\
+%  	\begin{association}{2017}{2018}{\href{http://www.rsme.es/}{RSME:}}{Chief editor in their weekly bulletin}
+% 	\end{association}
+% 	    \vspace{0.2in}
+% 	 	\begin{association}{2016}{2019}{\href{http://www.anem.es/web/}{ANEM:}}{Editor in their bulletin}
+% 	\end{association}
+% 	\vspace{0.2in}
+
+%    %   \begin{talk}{date}{type of performance}{title}{conference-center}{place}{country}{link}%
+% %     %   \end{talk}
+	
+%     \textbf{Talks and posters}\\
+% \begin{talk} {Jan2020}{Talk}{Self-improving results for Poincar\'e-type inequalities}
+%   {V Congreso de J\'ovenes Investigadores de la RSME}{Castell\'on}{Spain}
+%   { \href{https://jovenesrsme2020.com/wp-content/uploads/2020/01/libro_resumenes_definitivo.pdf}{\underline{Book of abstracts} }}
+% \end{talk}
+%     \vspace{0.2in}
+    
+% \begin{talk}{Dec 2019}
+%   {Talk}{Self-improving properties of Poincar\'e-Sobolev type inequalities}
+%   {\href{http://shorturl.at/hlnA7}{\underline{Analysis and PDE seminar, BCAM--UPV/EHU}}} {Bilbao}{Spain}
+%   { }  
+% \end{talk}
+%     \vspace{0.2in}    
+    
+%  \begin{talk}{Oct 2019}{Talk}{Automejora en controles de oscilaciones medias de funciones}{Universidad M\'alaga} {M\'alaga}{Spain}
+%   { }
+% \end{talk}
+%     \vspace{0.2in}       
+    
+%     \begin{talk}   
+%     {Sept 2019}{Talk}{Desigualdades de Poincar\'e-Sobolev mejoradas con pesos}
+%   {Universidad Nacional del Sur} {Bah\'ia Blanca}{Argentina}
+%   { }
+% \end{talk}
+%     \vspace{0.2in}   
+    
+    
+%      \begin{talk} {Sept 2019}  {Talk}{Desigualdades de Poincar\'e-Sobolev mejoradas con pesos}
+%   {Universidad de Buenos Aires} {Buenos Aires}{Argentina}
+%   { }
+% \end{talk}
+%     \vspace{0.2in}   
+    
+    
+%      \begin{talk}{Sept 2019}{Talk}{Desigualdades de Poincar\'e-Sobolev mejoradas con pesos}
+%   {Segundo Encuentro Conjunto de la UMA y la SOMACHI} {Mendoza}{Ar-\tabto{\spacing}gentina}
+%   { \href{http://www.union-matematica.org.ar/suma2019/files/02-2-005.pdf}{ \underline{Abstract}} }
+% \end{talk}
+%     \vspace{0.2in}   
+    
+    
+%      \begin{talk}{May 2019}
+%   {Poster}{On fractional Poincar\'e inequalities}
+%   {II BYMAT Conference}{Madrid}{Spain}
+%   {}{}
+% \end{talk}
+%     \vspace{0.2in}   
+    
+%          \begin{talk}{February 2019}{Poster}{On fractional Poincar\'e inequalities}
+%   {Universidad de Cantabria} {Cantabria}{Spain}
+%     { \href{https://2019.bienalrsme.com/sites/default/files/Listado-Resumenes-Posteres-BienalRSME2019.pdf}{ \underline{List of posters}}}
+% \end{talk}
+%     \vspace{0.2in}   
+    
+%        \begin{talk}{May 2018}{Talk} {On fractional Poincar\'e inequalities}
+%   {Summer school "Nonlocal Interactions in Partial Differential Equations \tabto{\spacing}and Geometry" at Institut Mittaf-Leffler} {Djursholm}{Sweden}
+%   { \href{http://www.mittag-leffler.se/sommarskola/nonlocal-interactions-partial-differential-equations-and-geometry}{\underline{Webpage of the school}}}
+% \end{talk}
+%     \vspace{0.2in}   
+    
+
+    
+    
+%          \begin{talk}    
+%     {May 2018}{Talk}{Sobolev-Poincar\'e inequalities for $p<1$}
+%   {I BYMAT Conference} {Madrid}{Spain}
+%   { }{}  
+% \end{talk}
+%     \vspace{0.2in}   
+    
+    
+%              \begin{talk}{Dec 2017}{Talk}{Algunas extensiones de la desigualdad de Poincar\'e}
+%   {I Encuentro Conjunto RSME-UMA}{Buenos Aires}{Argentina}
+%   { \href{http://uma2017.dm.uba.ar/index.php/resumen?code=9979}{ \underline{Abstract}}}
+  
+% \end{talk}
+%     \vspace{0.2in}   
+    
+    
+    
+%              \begin{talk}{Nov 2016}{Talk}{Sobolev integrability of solutions of the Beltrami equation}
+%   {Basque Center for Applied Mathematics}{Bilbao}{Spain}
+% { \href{http://www.bcamath.org/documentos_public/archivos/actividades/BCAMWorkingSeminarHA20161130JMP.pdf}{\underline{Abstract}}
+% %  \href{https://drive.google.com/file/d/0B-XkTHdwwkV5REQzZWp1SmJiaUk/view?usp=sharing}{\textcolor{cyan}{\underline{Notes}}}
+%   }
+% \end{talk}
+%     \vspace{0.2in}   
+ 
+ 
+ 
+ 
+ 
+    
+%   \textbf{Research stays and visits}\\  
+%    %   \begin{stay}{starting}{finishing}{center}{place}{host}%
+% %     %   \end{talk}    
+    
+    
+    
+%     \begin{stay}{1\,st--6\,th Sept 2019}{}{Universidad Nacional del Sur}{Bah\'ia Blanca, Argentina}{Israel P. Rivera R\'ios}    
+%     \end{stay}
+%         \vspace{0.2in}   
+%         \begin{stay}{1\,st Aug 2019}{1\,st Oct 2019}{Universidad Buenos Aires}{Buenos Aires, Argentina}{Ezequiel Rela}    
+%     \end{stay}
+%         \vspace{0.2in}   
+%         \begin{stay}{20\,th Nov 2017}{21\,st Oct 2017}{Universidad Buenos Aires and Universidad Nacional de La Plata}{Buenos Aires, Argentina}{Eugenia Cejas and Irene Drelichman}    
+%     \end{stay}
+%     \vspace{0.2in}
+    
+    
+    
+% %    
+% %    
+% %    
+% %      \textbf{Schools, Workshops and Courses}\\  
+% %    
+% %    
+% %    
+% %         \begin{talk}{Nov 2019}{Course}{Poincar\'e inequality in domains and elliptic PDE}
+% %  {Basque Center for Applied Mathematics}{Bilbao}{Spain}
+% %  {\href{http://users.jyu.fi/~antvahak/}{Antti V\"ah\"akangas  (University of Jyv\"askyl\"a)}\\ \tabto{\spacing}\href{http://www.bcamath.org/en/courses/2019-11-25-bcam-course}{{\underline{More info}}} }
+% %\end{talk}
+% %    \vspace{0.2in}   
+% %    
+% %        \begin{talk}   {Nov 2019}{Course}{The vortex filament equation, the Talbot effect and non-circular\\\tabto{\spacing}jets}
+% %  {Basque Center for Applied Mathematics}{Bilbao}{Spain}
+% %  {\href{http://www.ehu.eus/luisvega/index.php?id=vortex-filaments}{Luis Vega  (Basque Center for Applied Mathematics \& Euskal Herriko\\\tabto{\spacing} Unibertsitatea)}\\\tabto{\spacing}\href{http://www.bcamath.org/en/courses/2019-11-04-bcam-course}{{\underline{More info}}} }
+% %\end{talk}
+% %    \vspace{0.2in}   
+% %    
+% %    
+% %        
+% %        \begin{talk}{Jul 2019}{Summer School}{4\,th Summer School on Harmonic Analysis and PDEs:\tabto{\spacing} Restriction theory}
+% %  {Basque Center for Applied Mathematics}{Bilbao}{Spain}{}
+% %  { \begin{itemize}[leftmargin=1.6in ]\item\textbf{\emph{Course}: Tomas--Stein restriction theorem and decoupling inequalities} \\ David Beltran (University of Wisconsin-Madison) 
+% %  \item\textbf{\emph{Course}:  Bilinear estimates in restriction theory}\\ Javier Ramos (ICMAT)
+% %   \item\textbf{\emph{Course}: Extremizers for the Tomas--Stein theorem}\\ Julien Sabin (Universit\'e Paris-Sud)
+% %   \end{itemize}\tabto{\spacing}\href{https://sites.google.com/view/hapde2019/home}{{\underline{Webpage of the school}}}}
+% %\end{talk}
+% %    \vspace{0.2in}   
+% %    
+% %    
+% %        
+% %        \begin{talk}{Nov 2018}{Course}{Unique Continuation \& Uncertainty Principles}
+% %  {Basque Center for Applied Mathematics}{Bilbao}{Spain}
+% %  {Aingeru Fern\'andez Bertolin (Basque Center for Applied Mathematics \&\tabto{\spacing} Euskal Herriko Unibertsitatea) and {Diana Stan (University of Cantabria)}\\\tabto{\spacing}\href{http://www.bcamath.org/en/courses/2018-11-26-bcam-course}{{\underline{More info}}} }
+% %\end{talk}
+% %    \vspace{0.2in}   
+% %    
+% %    
+% %        
+% %        \begin{talk}{Nov 2018}{Workshop}{III School Orthonet}
+% %  {Basque Center for Applied Mathematics}{Bilbao}{Spain}
+% %  {\begin{itemize}[leftmargin=1.6in]
+% %   \item\textbf{\emph{Course}: Chebyshev polynomials} \\ Jacob S. Christiansen (Lund University)
+% %  \item\textbf{\emph{Course}:  From Jacobi polynomials to tilings of a hexagon}\\ Arno Kuijlaars (KU Leuven)
+% %   \item\textbf{\emph{Course}: On Hermite polynomials of a complex argument}\\Sundaram Thangavelu (Indian Institute of Science)
+% %   \end{itemize}\tabto{\spacing}\href{http://euler.us.es/~orthonet/orthonet18/index.html}{{\underline{Webpage of the school}}}}
+% %\end{talk}
+% %    \vspace{0.2in}   
+% %    
+% %    
+% %        
+% %        \begin{talk}{May 2018}{Summer School}{Nonlocal Interactions in Partial Differential Equa-\\\tabto{\spacing}tions and Geometry}
+% %  { Institut Mittaf-Leffler} {Djursholm}{Sweden}
+% %  {\begin{itemize}[leftmargin=1.6in]
+% %   \item\textbf{\emph{Course}: The Fractional Yamabe Problem} \\    Mar\'ia del Mar Gonz\'alez
+% %  \item\textbf{\emph{Course}: Geometric Aspects of Phase Separation}\\ Susanna Terracini   
+% %   \end{itemize}\tabto{\spacing}\href{http://www.mittag-leffler.se/sommarskola/nonlocal-interactions-partial-differential-equations-and-geometry}{{\underline{Webpage of the school}}}}
+% %\end{talk}
+% %    \vspace{0.2in}   
+% %    
+% %    
+% %           %   \begin{course}{date}{type}{title}{prof/place}{link}%
+% %%     %   \end{course}    
+% %        \begin{course}{May 2018}{Workshop}{Workshop on Complex Analysis and Operator Theory en\tabto{\spacing}Blanes}{Blanes, Spain}{\href{https://sites.google.com/view/blanes2018/home}{{\underline{Webpage of the Workshop}}}} 
+% %\end{course}
+% %    \vspace{0.2in}   
+% %    
+% %        
+% %        \begin{talk}{Apr 2018}{Course}{Theory of Self-Adjoint Operators}
+% %  {Basque Center for Applied Mathematics}{Bilbao}{Spain}
+% %  {\href{https://www.ceremade.dauphine.fr/~pizzichillo/}{Fabio Pizzichillo (Université Paris Dauphine)}\\\tabto{\spacing}\href{http://www.bcamath.org/en/courses/2018-04-16-bcam-course}{More info}}
+% %\end{talk}
+% %    \vspace{0.2in}   
+% %    
+% % 
+% %    
+% %           \begin{talk}{Mar 2018}{Workshop}{VIII Escuela-Taller de An\'alisis Funcional}
+% %  {Basque Center for Applied Mathematics}{Bilbao}{Spain}
+% %  {\href{http://www.bcamath.org/en/workshops/fa2018}{{\underline{More info}}}}{  }{}
+% %\end{talk}
+% %    \vspace{0.2in}     
+% %    
+% %    
+% %          \begin{talk}{May-Jun  2017}{School}{Spring School on Analysis 2017}
+% %  {Paseky nad Jizerou}{}{Czech Republic}
+% %  {\begin{itemize}[leftmargin=1.6in]
+% %   \item\textbf{\emph{Course}: Traces and embedding theorems in Sobolev type spaces} \\ \href{https://www.unifi.it/p-doc2-2012-200002-C-3f2a3d2c332b29.html}{Andrea Cianchi} (\href{https://www.unifi.it/index.php}{Università degli studi di Firenze})
+% %  \item\textbf{\emph{Course}: Extrapolation and Factorization}\\ \href{https://math.ua.edu/profile/david-cruz-uribe/}{David Cruz-Uribe}
+% %   (\href{https://www.ua.edu}{University of Alabama})  \href{https://arxiv.org/pdf/1706.02620.pdf}{ {\underline{Notes}}}  
+% %   \item\textbf{\emph{Course}: The Heisenberg groups}\\ \href{http://www.pitt.edu/~hajlasz/}{Piotr Hajłasz} (\href{http://www.pitt.edu}{University of Pittsburgh})  
+% %   \end{itemize}\tabto{\spacing}\href{http://kma.karlin.mff.cuni.cz/ss/jun17/}{{\underline{Webpage of the school}}}}
+% %\end{talk}
+% %    \vspace{0.2in}         
+% %    
+% %    
+% %      \begin{talk2}{Mar  2017}{Workshop}{VII Escuela-Taller de la Red de An\'alisis Funcional y sus\tabto{\spacing}Aplicaciones: An\'alisis de las desigualdades de Poincar\'e-Sobolev}
+% %  {C\'aceres}{Spain}
+% %  {\href{http://www.bcamath.org/en/people/cperez}{Carlos P\'erez Moreno (Euskal Herriko Unibertsitatea)}\\\tabto{\spacing}\href{http://www.um.es/functanalysis/EscuelaEncuentros/XIII_Encuentro_2017/charlas.html}{{\underline{Webpage of the school}}}}
+% %\end{talk2}
+% %    \vspace{0.2in}    
+% %    
+% %          \begin{talk}{Feb--Mar  2017}{Course}{Sparse domination of singular integrals beyond Calder\'on-Zygmund\tabto{\spacing}theory}
+% %  {Basque Center for Applied Mathematics}{Bilbao}{Spain}
+% %  {\href{http://people.virginia.edu/~fd4v/}{Francesco Di Plinio (University of Virginia)}\\\tabto{\spacing}\href{http://www.bcamath.org/es/courses/2017-02-27-bcam-course}{{\underline{More info}}}}
+% %\end{talk}
+% %    \vspace{0.2in}    
+% %    
+% %          \begin{talk}{Nov 2016}{Workshop}{I Escuela Orthonet}
+% %  {\href{http://www.us.es}{University of Sevilla}}{Sevilla}{Spain} {\begin{itemize}[leftmargin=1.6in]
+% %   \item\textbf{\emph{Course}: Polinomios ortogonales en la recta y la circunferencia} \\ \href{http://gama.uc3m.es/index.php/fmarcellan.html}{Francisco Marcell\'an} (\href{http://www.uc3m.es/Home}{UC3M}) y \href{https://goo.gl/fn7CbV}{Mar\'ia Jos\'e Cantero} (\href{https://www.unizar.es}{UNIZAR})
+% %  \item\textbf{\emph{Course}: Ortogonalidad y aproximaci\'on racional}\\ \href{https://goo.gl/8hsrY1}{Bernardo de la Calle}
+% %   (\href{http://www.upm.es}{UPM})    
+% %   \item\textbf{\emph{Course}: Ortogonalidad y aplicaciones} \href{https://www.imus.us.es/es/fichapersonal/ran}{Renato \'Alvarez-Nodarse} (\href{https://www.imus.us.es}{IMUS})  
+% %   \end{itemize}\tabto{\spacing}\href{http://euler.us.es/~orthonet/orthonet16/}{{\underline{Webpage of the school}}}}
+% %\end{talk}
+% %    \vspace{0.2in}    
+% %    
+% %          \begin{talk}{Oct 2016}{Course}{Solutions of the Divergence and Related Inequalities}
+% %  {Basque Center for Applied Mathematics}{Bilbao}{Spain}
+% %  {\href{http://mate.dm.uba.ar/~rduran/}{Ricardo Dur\'an (University of Buenos Aires and CONICET)}\\\tabto{\spacing}\href{http://www.bcamath.org/en/courses/2016-10-24-bcam-course}{{\underline{More info}}}}
+% %\end{talk}
+% %    \vspace{0.2in}    
+% %    
+% %          \begin{talk}{Oct 2016}{Course}{Layer Potential Method}
+% %  {Basque Center for Applied Mathematics}{Bilbao}{Spain}
+% %  {\href{http://www.bcamath.org/en/people/pcaro}{Pedro Caro (Basque Center for Applied Mathematics \& Euskal Herriko\tabto{\spacing}Unibertsitatea)}\\\tabto{\spacing}\href{http://www.bcamath.org/en/courses/2016-10-17-bcam-upv-course}{{\underline{More info}}}}
+% %\end{talk}
+% %    \vspace{0.2in}    
+% %    
+% %          \begin{talk}{Oct 2016}{Workshop}{First Workshop on Complex Analysis and Operator Theory}
+% %  {University of M\'alaga}{M\'alaga}{Spain}
+% %  {\begin{itemize}[leftmargin=1.6in]
+% %  \item \textbf{\emph{Course}: Boundary behavior of the iterates of a self-map of the unit disk}\\
+% %   \href{https://www.imus.us.es/es/fichapersonal/contreras}{Manuel D. Contreras} (\href{https://www.imus.us.es/}{IMUS})
+% %  \end{itemize}\tabto{\spacing}\href{http://www.uma.es/investigadores/grupos/cfunspot/wscaot2016/}{{\underline{Webpage of the Workshop}}}}
+% %\end{talk}
+% %    \vspace{0.2in}    
+% %    
+% %        \begin{talk}{May 2016}
+% %  {Course}{Variational and topological methods applied to Differential Ge-\tabto{\spacing}ometry}
+% %  {University of M\'alaga}{M\'alaga}{Spain}
+% %  {\href{https://persone.ict.uniba.it/rubrica/annamaria.candela}{Anna Maria Candela (Università degli Studi di Bari Aldo Moro)}}
+% %\end{talk}
+% %    \vspace{0.2in}    
+    
+ 
+% %    
+% %        \begin{talk}{}{}{}{}{}{}{}
+% %\end{talk}
+% %    \vspace{0.2in}    
+
+
+
+
+
+
+
+
+
+
+
+% %    \textbf{Technical experience}\\
+% %    \textit{Hardware}\\
+% %	PMTs, digitizers, breadboarding\\
+% %
+% %	\vspace{-0.15in}
+% %	\textit{Software}\\
+% %	TensorFlow/Keras, Linux shell, Python, \LaTeX, C/C++, ROOT, Fortran\\
+% %	Winner of UA's Large Hadron Collider Machine Learning Hackathon (2019)
+% %	\vspace{0.2in}
+% %
+% %	\textbf{Honors and awards}
+% %	\begin{itemize}
+% %	    \item Goldwater Scholarship (2019)
+% %	    \item Outstanding First Year Physics Student (2017)
+% %	    \item Computer--Based Honors Program Fellowship (2016)
+% %	    \item University of Alabama Presidential Scholarship (2016)
+% %    \end{itemize}
+% %   
+
+
+
+% \textbf{Certified Linguistic Skills}\\
+
+% \begin{lang}{Spanish}{Mother tongue}
+% \end{lang}
+% \vspace{0.2in}
+% \begin{lang}
+% {English}{Medium, CertAcles Certificate level B1}
+% \end{lang}
+% \vspace{0.2in}
+% \begin{lang}
+% {Euskera}{Basic level, A1}
+% \end{lang}
+% \vspace{0.2in}
+
+
+% \textbf{Others}\\
+
+
+% \begin{other}{2016}{Present }{Editor and reviewer in the dissemination journal TEMat}{\href{http://temat.anemat.com}{{\underline{Webpage of the journal}}}} 
+%     \end{other}
+% \vspace{0.2in}
+% \begin{other}{2018}{Present }{Co-organiser of the LIGHT seminar at BCAM}{\href{https://sites.google.com/view/lightseminar}{{\underline{Webpage of the seminar}}}}
+%     \end{other}
+
+
+
+
+
+
+%  \end{adjustwidth}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
