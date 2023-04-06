@@ -271,8 +271,8 @@ body {
     display: inline-block;
     cursor: pointer;
     width: 20px;
-    height: 12px;
-    border-radius: 22px;
+    height: 13px;
+    border-radius: 20px;
     background-color: gray;
     position: relative;
   }
@@ -285,8 +285,8 @@ body {
     border-radius: 50%;
     background-color: white;
     position: absolute;
-    top: 2px;
-    left: 2.2px;
+    top: 2.5px;
+    left: 2.5px;
     transition: transform 0.3s ease;
   }
   
@@ -296,5 +296,5 @@ body {
   }
   
   .theme-toggle:checked + .theme-toggle-label .theme-toggle-icon {
-    transform: translateX(8px);
+    transform: translateX(7px);
   }
