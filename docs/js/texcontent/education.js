@@ -11,8 +11,6 @@ import { fetchTexData } from '../utils/fetch.js';
 // transforms the above into a list of dictionaries
 
         // console.log(data)
-
-
         // const data = jsonEmployments
         // fs.writeFileSync(path.join(__dirname, 'employment.json'), json);
         // Create a variable to store the HTML string
@@ -29,11 +27,9 @@ import { fetchTexData } from '../utils/fetch.js';
         data.forEach(item =>{
                 // console.log(item)
                 counter = counter + 1;
-                item['position'] = item['position'].replace(/\\href{([^}]*)}{([^}]*)}/g, '<a href="$1" style="text-decoration: none; color: #FFFFFF">$2</a>');
+                item['position'] = item['position'].replace(/\\href{([^}]*)}{([^}]*)}/g, '<a href="$1" style="text-decoration: none; color: var(--strong)">$2</a>');
                 item['institution'] = item['institution'].replace(/\\href{([^}]*)}{([^}]*)}/g, '<a href="$1" style="text-decoration: none; color: #808080;">$2</a>');
                 // item['description'] = item['description'].replace(/\\href{([^}]*)}{([^}]*)}/g, '<a href="$1" style="text-decoration: none; color: #808080;">$2</a>');
-    
-
                 // writes spanish accents as they are, that is, replace \'{a} with á and so on 
                 function replaceAll(str, find, replace) {
                     return str.replace(new RegExp(find, 'g'), replace);
@@ -77,13 +73,13 @@ import { fetchTexData } from '../utils/fetch.js';
 
 
                     if (counter < lendata) {
-                        html = html + '<div class="itemtitle" style="color: white;">'+'<span style="color: white;font-size: 15pt;">"</span>'+
-                        item['position'].toUpperCase()+' <span style="color:#808080">at '+item['institution']+'</span>, from '+item['startDate']+' to '+item['endDate']+'.<span style="color: white;font-size: 15pt;">",</span></div>'+
+                        html = html + '<div class="itemtitle" style="color: var(--strong);">'+'<span style="color: var(--strong);font-size: 15pt;">"</span>'+
+                        item['position'].toUpperCase()+' <span style="color:#808080">at '+item['institution']+'</span>, from '+item['startDate']+' to '+item['endDate']+'.<span style="color: var(--strong);font-size: 15pt;">",</span></div>'+
                             '<div class="itemcontent"> </div>'
                     }
                     else {
-                        html = html + '<div class="itemtitle" style="color: white;">'+'<span style="color: white;font-size: 15pt;">"</span>'+
-                        item['position'].toUpperCase()+' <span style="color:#808080">at '+item['institution']+'</span>, from '+item['startDate']+' to '+item['endDate']+'.<span style="color: white;font-size: 15pt;">"</span></div>'+
+                        html = html + '<div class="itemtitle" style="color: var(--strong);">'+'<span style="color: var(--strong);font-size: 15pt;">"</span>'+
+                        item['position'].toUpperCase()+' <span style="color:#808080">at '+item['institution']+'</span>, from '+item['startDate']+' to '+item['endDate']+'.<span style="color: var(--strong);font-size: 15pt;">"</span></div>'+
                             '<div class="itemcontent"> </div>'
                     }
 
@@ -97,4 +93,3 @@ import { fetchTexData } from '../utils/fetch.js';
         document.querySelector('#educationItems').innerHTML = html;
         // your code for parsing the file goes here
     // });
-    

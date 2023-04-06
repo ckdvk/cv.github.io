@@ -66,16 +66,17 @@ export function renderResearchInfo(researchItem) {
     for (var key in researchItem) {
         researchItem[key] = normalize(researchItem[key])
     }
+    console.log('value '+researchItem['journal'])
 
     var html = ''
     html = html + '<li class="researchItem">'+
     '<span style= "color: #808080;">'+
     researchItem['author']+
-    '. </span><span  style= "color: #FFFFFF; font-weight:bold">“'+
+    '. </span><span  style= "color: var(--strong); font-weight:bold">“'+
         researchItem['title']+
     '”</span>. In: '+
     // italic
-    '<span style= "font-style:italic">'+
+    '<span style= "font-style:italic; color: var(--strong); text-decoration: none" >'+
     researchItem['journal']+
     '</span> ('+researchItem['year']+
     ').</li> <br>\n'

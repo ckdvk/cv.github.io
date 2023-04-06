@@ -88,14 +88,10 @@ export function getResearchItem(path, researchItem) {
                 // just catch = sign if it is not inside a curly bracket
                 // if (field.includes('{') && field.includes('}')){
                 //     var equalSign = field.indexOf('=')
-
                 var key = field.split('=')[0].toLowerCase().trim()
                 // console.log('key '+key)
-
                 // value is the union of the remaining elements of field.split('=')
-
-                var value = field.split('=').slice(1).join('=').trim().replaceAll(/\\href{([^}]*)}{([^}]*)}/g, '<a href="$1" style="text-decoration: none; color: #FFFFFF">$2</a>').replace('},','}');
-
+                var value = field.split('=').slice(1).join('=').trim().replaceAll(/\\href{([^}]*)}{([^}]*)}/g, '<a style="text-decoration: none; " href="$1" >$2</a>').replace('},','}');
                 // var value = field.split('=')[1].trim().replace('},','}')
                 // console.log(['year', 'title', 'author', 'journal', 'volume', 'number'].includes(key.toString()))
                 if (['year', 'title', 'author', 'journal', 'volume', 'number'].includes(key.toString())){
