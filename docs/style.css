@@ -100,7 +100,7 @@ body {
 
 .leftcolumnheader {
     float: left;
-    width: 85%;
+    width: 80%;
     margin-right: 5%;
     /* adjust margin to center content */
 }
@@ -113,7 +113,7 @@ body {
 
 .rightcolumnheader {
     float: right;
-    width: 15%;
+    width: 20%;
     margin-left: 0%;
     margin-right: 6%  /* adjust margin to center content */ 
 }
