@@ -50,6 +50,5 @@ import { fetchTexData } from '../utils/fetch.js';
         // console.log(html)
         // Insert the HTML string into the DOM
         document.querySelector('#employmentItems').innerHTML = html;
-        // your code for parsing the file goes here
     // });
     

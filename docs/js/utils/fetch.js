@@ -59,7 +59,6 @@ export function getResearchItem(path, researchItem) {
     // pages = {1--35}
     // }
 
-    // I just need the fields year, author, title, and journal 
 
     // path: path to the tex file
     // researchItem: name of the research item
