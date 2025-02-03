@@ -11,5 +11,5 @@ const titleelements = document.querySelectorAll('.itemtitle');
 titleelements.forEach(element => {
     const originalTextTitle = element.textContent.trim();
     const newText = '<span style="color: --strong;font-size: 15pt;">"</span>' + originalTextTitle 
-    element.innerHTML = newText; // Use innerHTML instead of textContent
+    element.innerHTML = newText; 
 });

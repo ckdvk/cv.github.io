@@ -81,8 +81,5 @@ for (let skillType of Object.keys(skillsDict)) {
         html += `</div>`
     }
 
-
-    // console.log('SKILLS HTML', html)
-
     document.querySelector('#skillsItems').innerHTML = html;
 

@@ -6,13 +6,11 @@
 
 <html lang="en">
 
-    <!-- import { toggleTheme } from 'js/utils/togglestyle.js'; -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My CV</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <script type="module" src="js/utils/togglestyle.js"></script> -->
     <script>
         var dark = true;
         var strongColor = 'white';
@@ -27,11 +25,11 @@
                 softColor= '#a9a9a9';
                 backgroundColor= '#f0f0f0';
                 dark = !dark;
-            } else {     
+            } else {
                 strongColor = 'white';
                 semiStrongColor= '#808080';
                 softColor= '#a9a9a9';
-                backgroundColor= '#3b3b3b';           
+                backgroundColor= '#3b3b3b';
             dark = !dark;
             }
             document.documentElement.style.setProperty('--strong', strongColor);
@@ -40,12 +38,10 @@
             document.documentElement.style.setProperty('--background', backgroundColor);
             console.log('CHANGECOLORS() called')
 
-}
-
+		}
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-WKKn9H5l5DQ2g2RNhP7dWjLZw0xbCJD77rzMHJ56Vj/Ab9od5M5n2A5NKRUCPc25NjwNnZu3tq4x4+Bc2X9UMQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- darkgray background -->
-    <!-- <script  src="js/utils/togglestyle.js"></script> -->
+
 </head>
 
 <body>
@@ -63,23 +59,16 @@
                 My CV
             </title>
         </head>
-        <!-- <button  onclick="toggleTheme()"> <i class="fa fa-lightbulb"></i>Toggle Theme</button> -->
 
         <body>
             
 
             <header class="headercontainer">
-                <!-- uses style .namestyle in the style.css file -->
             <div class="leftcolumnheader">
-
-
-<!-- same as below, but after clicking leads you to index.html, without losing the h1 title style, with no underline -->
-
 
 
                 <a href="index.html" class="namestyle" style =" text-decoration: none;">
                 <h1 id ="title" class="titlenamestyle">
-                    <!-- the above style, but in css -->
                     <span style="color: var(--strong);">
                         {
                         </span>
@@ -121,26 +110,15 @@
                 </div>
             </div>
             <div class="rightcolumnheader">
-                <!-- hide the underline and colour of the link -->
                 <a class="titlemailstyle" href="mailto:javier.perales@gtiit.edu.cn">
                     <br>
                     javier&#8203;.perales&#8203;@gtiit.edu.cn
-                    <!--the above, but hyphenable -->
                 </a>
-                <!-- <a class="titlemailstyle" href="https://sites.google.com/view/javiermartinez/home"> 
-                    <br>
 
-                 
-                    Research page
-                </a>
-             -->
             <a class="titlemailstyle" href="research.html">
                 <br>
                 Research page
             </a>
-
-            <!-- curriculum -->
-            <!-- clicking Downloadable CV makes you download the new_academic.pdf file -->
 
             <a class="titlemailstyle" href="cv_martinez_perales.pdf" download>
                 <br>
@@ -151,15 +129,6 @@
 
             </div>
 
-
-
-
-            <!-- a horizontal line covering the whole screen -->
-
-
-<!-- 
-            redcolor
-            <hr class="hrstyle", style="color: rgb(184, 7, 7);" -->
 
             </header>
 
@@ -222,20 +191,12 @@
                     </section>
 
                         
-                        <!-- <section   id="research">
-                            <h1 class = "sectionname">
-                                RESEARCH
-                            </h1>
-                            <div id="researchItems">
-                                
-                            </div>
-                        </section> -->
+                     
                     </div>
                 </div>
             </main>
             <footer>
                 <p>
-                    <!-- My First Footer -->
                 </p>
             </footer>
         </body>
