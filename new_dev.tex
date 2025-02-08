@@ -1,0 +1,136 @@
+\documentclass[a4paper,10pt]{article}
+
+\include{style_classes/dev_packages.tex}
+\include{style_classes/dev_commands.tex}
+\include{style_classes/dev_style.tex}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\vspace{1cm}
+\ttfamily
+
+% CV PAGE
+{\large \textbf{{{\color{magenta}let} cv = }}}\jsonbracket{\{}{\Large}{bracketcolor}\vspace{-0.4cm}\\
+
+	% PERSONAL DATA
+	\tab	\jsonkey{"data"}{\normalsize}{keycolor}\sp : \jsonbracket{\{}{\normalsize}{bracketcolor}\\
+		\tab\tab	\jsonkey{"name"}{\normalsize}{purple}\sp : \jsonstring{Javier Mart\'inez Perales}{\normalsize}{stringcolor},\\
+		\tab\tab	\jsonkey{"email"}{\normalsize}{purple}\sp : \jsonstring{{\href{mailto:javicemarpe@gmail.com}{javicemarpe@gmail.com}}}{\normalsize}{stringcolor},\\
+		\tab\tab	\jsonkey{"website"}{\normalsize}{purple}\sp: \jsonstring{{\href{https://ckdvk.github.io/cv.github.io/}{https://ckdvk.github.io/cv.github.io/}}}{\normalsize}{stringcolor},\\
+	\tab	\jsonbracket{\}}{\normalsize}{bracketcolor}{\normalsize ,}\vspace{0.1cm}
+
+
+	% EMPLOYMENT
+	\tab	\jsonkey{"employment"}{\normalsize}{keycolor}\sp : \jsonbracket{[}{\normalsize}{bracketcolor}\\
+		\thspace{-0.2cm}\input{docs/items/employment.tex}
+		\vspace{-0.1cm}
+	\tab	\jsonbracket{]}{\normalsize}{bracketcolor} {\normalsize,}\vspace{0.1cm}
+
+
+	% EDUCATION
+	\tab	\jsonkey{"education"}{\normalsize}{keycolor}\sp : \jsonbracket{[}{\normalsize}{bracketcolor}\vspace{-0.4cm}\\
+		\thspace{-0.2cm}\input{docs/items/education.tex}
+		\vspace{-0.1cm}
+	\tab	\jsonbracket{]}{\normalsize}{bracketcolor} {\normalsize,}
+
+\jsonbracket{\}}{\Large}{bracketcolor}{\Large ;}
+
+
+\newpage
+% SKILLS AND PROJECTS
+{\large \textbf{{{\color{magenta}let} skills = }}}\jsonbracket{\{}{\Large}{bracketcolor}\vspace{-0.4cm}\\
+
+	% SKILLS
+	% Technologies
+	\tab	\jsonkey{"technologies"}{\normalsize}{keycolor}\sp : \jsonbracket{[}{\normalsize}{bracketcolor} \input{docs/items/tech_proficientskills.tex}{,}	\sp\input{docs/items/tech_familiarskills.tex}
+	\thspace{-0.3cm}\jsonbracket{]}{\normalsize}{bracketcolor}{\normalsize,}\vspace{0.1cm}
+
+	% other skills
+	\tab	\jsonkey{"other skills"}{\normalsize}{keycolor}\sp : \jsonbracket{[}{\normalsize}{bracketcolor} \input{docs/items/soft_strongskills.tex}
+	% 	\vspace{-0.1cm}
+	\thspace{-0.3cm}\jsonbracket{]}{\normalsize}{bracketcolor}\vspace{0.1cm}
+
+\jsonbracket{\}}{\Large}{bracketcolor}{\Large ;}
+
+\vspace{0.25cm}
+
+{\large \textbf{{{\color{magenta}let} public\_projects = }}}\jsonbracket{\{}{\Large}{bracketcolor}\vspace{-0.4cm}\\
+
+
+	\tab	\jsonkey{"link\_shortener-frontend"}{\normalsize}{keycolor}\sp : \sp \jsonbracket{\{}{\normalsize}{bracketcolor}\\
+		\tab\tab	\jsonkey{"description"}{\normalsize}{purple}\sp : \jsonstring{Frontend for a link shortener web application}{\normalsize}{stringcolor},\\
+		\tab\tab	\jsonkey{"tech"}{\normalsize}{purple}\sp : \jsonstring{Vue, JavaScript, Node.js}{\normalsize}{stringcolor},\\
+		% the link is https://github.com/ckdvk/link_shortener-frontend
+		\tab\tab	\jsonkey{"link"}{\normalsize}{purple}\sp : \jsonstring{\href[]{https://github.com/ckdvk/link_shortener-frontend}{https://github.com/ckdvk/link\_shortener-frontend}}{\normalsize}{stringcolor}\vspace{-0.2cm}\\
+		\tab	\jsonbracket{\}}{\normalsize}{bracketcolor}{\normalsize ,}\vspace{0.1cm}
+
+	\tab	\jsonkey{"link\_shortener-backend"}{\normalsize}{keycolor}\sp : \sp \jsonbracket{\{}{\normalsize}{bracketcolor}\\
+		\tab\tab	\jsonkey{"description"}{\normalsize}{purple}\sp : \jsonstring{Backend for a link shortener web application}{\normalsize}{stringcolor},\\
+		\tab\tab	\jsonkey{"tech"}{\normalsize}{purple}\sp : \jsonstring{Node.js, Express, SQLite}{\normalsize}{stringcolor},\\
+		% the link is
+		\tab\tab	\jsonkey{"link"}{\normalsize}{purple}\sp : \jsonstring{\href[]{https://github.com/ckdvk/link_shortener-backend}{https://github.com/ckdvk/link\_shortener-backend}}{\normalsize}{stringcolor}\vspace{-0.2cm}\\
+		\tab	\jsonbracket{\}}{\normalsize}{bracketcolor}{\normalsize ,}\vspace{0.1cm}
+
+	\tab	\jsonkey{"eloquent-javascript-es"}{\normalsize}{keycolor}\sp : \sp \jsonbracket{\{}{\normalsize}{bracketcolor}\\
+		\tab\tab	\jsonkey{"description"}{\normalsize}{purple}\sp : \jsonstring{Fork from \href{https://github.com/midudev/eloquent-javascript-es}{midudev}'s translation of the book \href{https://eloquentjavascript.net/}{Eloquent Javascript}}{\normalsize}{stringcolor},\\
+		\tab\tab	\jsonkey{"tech"}{\normalsize}{purple}\sp : \jsonstring{JavaScript, Markdown, \LaTeX, Markdown, make, HTML, git}{\normalsize}{stringcolor},\\
+		% the link is
+		\tab\tab	\jsonkey{"link"}{\normalsize}{purple}\sp : \jsonstring{\href[]{https://github.com/ckdvk/eloquent-javascript-es}{https://github.com/ckdvk/eloquent-javascript-es}}{\normalsize}{stringcolor}\vspace{-0.2cm}\\
+		\tab	\jsonbracket{\}}{\normalsize}{bracketcolor}{\normalsize ,}\vspace{0.1cm}
+
+	\tab	\jsonkey{"this\_cv"}{\normalsize}{keycolor}\sp : \sp \jsonbracket{\{}{\normalsize}{bracketcolor}\\
+		\tab\tab	\jsonkey{"description"}{\normalsize}{purple}\sp : \jsonstring{This CV}{\normalsize}{stringcolor},\\
+		\tab\tab	\jsonkey{"tech"}{\normalsize}{purple}\sp : \jsonstring{\LaTeX, Python, git, JavaScript, HTML, CSS, Jupyter}{\normalsize}{stringcolor},\\
+		% the link is
+		\tab\tab	\jsonkey{"link"}{\normalsize}{purple}\sp : \jsonstring{\href[]{https://ckdvk.github.io/cv.github.io/}{https://ckdvk.github.io/cv.github.io/}}{\normalsize}{stringcolor}\vspace{-0.2cm}\\
+		\tab	\jsonbracket{\}}{\normalsize}{bracketcolor}{\normalsize ,}\vspace{0.1cm}
+
+	\jsonbracket{\}}{\Large}{bracketcolor}{\Large ;}
+
+
+\vspace{0.3cm}
+
+{\large \textbf{{{\color{magenta}let} math\_research = }}}\jsonbracket{\{}{\Large}{bracketcolor}\vspace{-0.4cm}\\
+
+	% BIBITEMS
+	\begin{refitem}
+		{On the Weighted Inequality Between the Gagliardo and Sobolev Seminorms}{Ritva Hurri-Syrj{\"a}nen, J.M.P.,  Carlos P\'erez, and Antti V{\"a}h{\"a}kangas}{Preprint, 2023}
+	\end{refitem}
+
+	\begin{refitem}
+		{Remarks on vector-valued Gagliardo and Poincar\'{e}-Sobolev type inequalities with weights}{J.M.P. and Carlos P\'erez}{Potentials and Partial Differential Equations. The Legacy of David R. Adams, 2023}
+	\end{refitem}
+
+	\begin{refitem}
+		{Quantitative John-Nirenberg inequalities at different scales}{J.M.P., Ezequiel Rela, and Israel Rivera-R\'ios}{Revista Matemática Complutense, 2022}
+	\end{refitem}
+
+	\begin{refitem}
+		{Maximal operators on the infinite-dimensional torus}{Dariusz Kosz, J.M.P., Victoria  Paternostro, Ezequiel Rela, and Luz Roncal}{Mathematische Annalen, 2022}
+	\end{refitem}
+
+	\begin{refitem}
+		{On the BBM-phenomenon in fractional Poincare-Sobolev inequalities with weights}{Ritva Hurri-Syrj{\"a}nen, J.M.P., Carlos and P\'erez, and Antti V{\"a}h{\"a}kangas}{International Mathematics Research Notices, 2022}
+	\end{refitem}
+
+	\begin{refitem}
+		{A note on generalized Poincar\'e-type inequalities with applications to weighted improved Poincar\'e-type inequalities}{J.M.P.}{Ann. Acad. Sci. Fenn. Math., 2019}
+	\end{refitem}
+
+	\begin{refitem}
+		{Improved fractional Poincar\'e type inequalities on John domains}{Eugenia Cejas, Irene Drelichman, and J.M.P.}{Ark. Mat., 2019}
+	\end{refitem}
+
+	\begin{firstrefitem}
+		{On Bloom type estimates for iterated commutators of fractional integrals}{Natalia Accomazzo, J.M.P.and Israel Rivera-R\'ios}{Indiana U. Math. J., 2017}
+	\end{firstrefitem}
+
+
+	\jsonbracket{\}}{\Large}{bracketcolor}{\Large ;}
+
+
+
+\end{document}
+

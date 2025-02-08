@@ -1,0 +1,13 @@
+\definecolor{keycolor}{RGB}{31,120,180} % Azul para claves
+\definecolor{stringcolor}{RGB}{51,160,44} % Verde para strings
+\definecolor{numbercolor}{RGB}{227,26,28} % Rojo para números
+\definecolor{bracketcolor}{RGB}{200,200,200} % Gris para llaves
+
+\newcommand{\jsonkey}[3]{\textcolor{#3}{{#2\textbf{#1}}}}
+\newcommand{\jsonstring}[3]{\textcolor{#3}{#2{"#1"}}}
+\newcommand{\jsonnumber}[3]{\textcolor{#3}{#2{#1}}}
+\newcommand{\jsonbracket}[3]{\textcolor{#3}{#2{#1}}}
+\newcommand{\tab}{\textcolor{black}{\quad\quad}}
+\renewcommand{\sp}{\textcolor{black}{\ }}
+\newcommand{\thspace}[1]{\textcolor{black}{\hspace{#1}}}
+\newcommand{\spaced}{,\sp}

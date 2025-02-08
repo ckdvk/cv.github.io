@@ -1,0 +1,64 @@
+\usepackage[top=0.3in, bottom=0.15in, left=0.4in, right=0.8in]{geometry}
+
+
+
+% no indent
+\setlength\parindent{0pt}
+
+% EMPLOYMENT
+\newenvironment{employment}[5]{
+	\tab\tab\jsonbracket{\{}{\normalsize}{bracketcolor}\vspace{-0.3cm}\\
+		\tab\tab\tab	\jsonkey{"what"}{\normalsize}{purple}\sp : \jsonstring{#1}{\normalsize}{stringcolor},\\
+		\tab\tab\tab	\jsonkey{"where"}{\normalsize}{purple}\sp : \jsonstring{#2}{\normalsize}{stringcolor},\\
+		\tab\tab\tab	\jsonkey{"from"}{\normalsize}{purple}\sp : \jsonstring{#3}{\normalsize}{stringcolor},\\
+		\tab\tab\tab	\jsonkey{"to"}{\normalsize}{purple}\sp : \jsonstring{#4}{\normalsize}{stringcolor}\vspace{-0.2cm}\\
+	\tab\tab\jsonbracket{\}}{\normalsize}{bracketcolor}{\normalsize ,} \vspace{0.1cm}
+}{}
+
+\newenvironment{firstemployment}[5]{
+	\tab\tab\jsonbracket{\{}{\normalsize}{bracketcolor}\vspace{-0.3cm}\\
+		\tab\tab\tab	\jsonkey{"what"}{\normalsize}{purple}\sp : \jsonstring{#1}{\normalsize}{stringcolor},\\
+		\tab\tab\tab	\jsonkey{"where"}{\normalsize}{purple}\sp : \jsonstring{#2}{\normalsize}{stringcolor},\\
+		\tab\tab\tab	\jsonkey{"from"}{\normalsize}{purple}\sp : \jsonstring{#3}{\normalsize}{stringcolor},\\
+		\tab\tab\tab	\jsonkey{"to"}{\normalsize}{purple}\sp : \jsonstring{#4}{\normalsize}{stringcolor}\vspace{-0.2cm}\\
+	\tab\tab\jsonbracket{\}}{\normalsize}{bracketcolor}\\
+	}{}
+
+% EDUCATION
+\newenvironment{education}[4]{
+	\tab\tab\jsonbracket{\{}{\normalsize}{bracketcolor}\vspace{-0.3cm}\\
+		\tab\tab\tab	\jsonkey{"degree"}{\normalsize}{purple}\sp : \jsonstring{#1}{\normalsize}{stringcolor},\\
+		\tab\tab\tab	\jsonkey{"institution"}{\normalsize}{purple}\sp : \jsonstring{#2}{\normalsize}{stringcolor},\\
+		\tab\tab\tab	\jsonkey{"from"}{\normalsize}{purple}\sp : \jsonstring{#3}{\normalsize}{stringcolor},\\
+		\tab\tab\tab	\jsonkey{"to"}{\normalsize}{purple}\sp : \jsonstring{#4}{\normalsize}{stringcolor} \vspace{-0.2cm}\\
+	\tab\tab\jsonbracket{\}}{\normalsize}{bracketcolor}{\normalsize ,} \vspace{0.1cm}
+}{}
+
+\newenvironment{firsteducation}[4]{
+	\tab\tab\jsonbracket{\{}{\normalsize}{bracketcolor}\vspace{-0.3cm}\\
+		\tab\tab\tab	\jsonkey{"degree"}{\normalsize}{purple}\sp : \jsonstring{#1}{\normalsize}{stringcolor},\\
+		\tab\tab\tab	\jsonkey{"institution"}{\normalsize}{purple}\sp : \jsonstring{#2}{\normalsize}{stringcolor},\\
+		\tab\tab\tab	\jsonkey{"from"}{\normalsize}{purple}\sp : \jsonstring{#3}{\normalsize}{stringcolor},\\
+		\tab\tab\tab	\jsonkey{"to"}{\normalsize}{purple}\sp : \jsonstring{#4}{\normalsize}{stringcolor}\vspace{-0.2cm}\\
+	\tab\tab\jsonbracket{\}}{\normalsize}{bracketcolor}\\
+}{}
+
+
+
+\newenvironment{refitem}[3]{
+	\tab\tab\jsonbracket{\{}{\normalsize}{bracketcolor}\vspace{-0.35cm}\\
+		\tab\tab\tab	\jsonkey{"title"}{\normalsize}{purple}\sp : \jsonstring{#1}{\normalsize}{stringcolor},\\
+		\tab\tab\tab	\jsonkey{"author"}{\normalsize}{purple}\sp : \jsonstring{#2}{\normalsize}{stringcolor},\\
+		\tab\tab\tab	\jsonkey{"journal"}{\normalsize}{purple}\sp : \jsonstring{#3}{\normalsize}{stringcolor}\vspace{-0.2cm}\\
+	\tab\tab\jsonbracket{\}}{\normalsize}{bracketcolor}{\normalsize ,} \vspace{0.05cm}
+}{}
+
+% same for first one
+
+\newenvironment{firstrefitem}[3]{
+	\tab\tab\jsonbracket{\{}{\normalsize}{bracketcolor}\vspace{-0.35cm}\\
+		\tab\tab\tab	\jsonkey{"title"}{\normalsize}{purple}\sp : \jsonstring{#1}{\normalsize}{stringcolor},\\
+		\tab\tab\tab	\jsonkey{"author"}{\normalsize}{purple}\sp : \jsonstring{#2}{\normalsize}{stringcolor},\\
+		\tab\tab\tab	\jsonkey{"journal"}{\normalsize}{purple}\sp : \jsonstring{#3}{\normalsize}{stringcolor}\vspace{-0.2cm}\\
+	\tab\tab\jsonbracket{\}}{\normalsize}{bracketcolor}\\
+}{}
