@@ -1,7 +1,26 @@
-\definecolor{keycolor}{RGB}{31,120,180} % Azul para claves
-\definecolor{stringcolor}{RGB}{51,160,44} % Verde para strings
-\definecolor{numbercolor}{RGB}{227,26,28} % Rojo para números
+% \definecolor{keycolor}{RGB}{31,120,180} % Azul para claves
+% \definecolor{stringcolor}{RGB}{51,160,44} % Verde para strings
+% \definecolor{numbercolor}{RGB}{227,26,28} % Rojo para números
 \definecolor{bracketcolor}{RGB}{200,200,200} % Gris para llaves
+
+% define color with html code 1faa89
+
+\definecolor{keycolor}{HTML}{0A7264}
+
+% define color with html code 3b3b3b
+
+\definecolor{stringcolor}{HTML}{3b3b3b}
+
+% define color with html code 008967
+
+% \definecolor{numbercolor}{HTML}{008967}
+
+\definecolor{subkeyscolor}{HTML}{0BB188}
+
+\definecolor{keyword}{HTML}{C11A71}
+
+
+\definecolor{varname}{HTML}{57BDD2}
 
 \newcommand{\jsonkey}[3]{\textcolor{#3}{{#2\textbf{#1}}}}
 \newcommand{\jsonstring}[3]{\textcolor{#3}{#2{"#1"}}}
@@ -11,3 +30,120 @@
 \renewcommand{\sp}{\textcolor{black}{\ }}
 \newcommand{\thspace}[1]{\textcolor{black}{\hspace{#1}}}
 \newcommand{\spaced}{,\sp}
+
+% \newcommand{\glitchtext}[1]{%
+%     \begin{tikzpicture}
+%         \node[scale=1, text=cyan, font=\bfseries\ttfamily\huge] at (-0.03,0) {#1};
+%         \node[scale=1, text=varname, font=\bfseries\ttfamily\huge] at (0.03,0) {#1};
+%         \node[scale=1, text=keycolor, font=\bfseries\ttfamily\huge] at (0,0) {#1};
+%     \end{tikzpicture}%
+% }
+
+
+
+
+\definecolor{glitchgreen}{HTML}{32F8C9}
+\definecolor{glitchgreenclearer}{HTML}{76ED98}
+\definecolor{glitchgreenlighter}{HTML}{BEF6E8}
+
+
+
+
+
+
+
+% \newcommand{\glitchshadow}[1]{%
+% 	#1
+% % \foreach \i in {0.1,0.2,...,1}{
+% 	% 	\pgfmathsetmacro{\xshift}{rand*0.02-0.01}
+% 	% 	\pgfmathsetmacro{\yshift}{rand*0.02-0.01}
+% 	% 	\node[inner sep=0, outer sep=0, scale=1.01 * \i, text=glitchgreenclearer, font=\bfseries\ttfamily\huge, text opacity=0.2*\i] at (\xshift em, \yshift em) {#1};
+% 	% }
+% }
+
+% \newcommand{\glitchchar}[3]{%
+% 	\begin{tikzpicture}[baseline=(char.base)]
+% 		\node (char) [inner sep=0, outer sep=0, text=#2, font=\bfseries\ttfamily#3] {#1};
+% 		\glitchshadow{#1}
+% 		% Randomly adds horizontal lines at three different heights, also random, within the height of the character
+% 			\foreach \i in {0.1,0.4,...,1}{
+% 				\pgfmathsetmacro{\yshift}{rand*0.7}
+% 				\pgfmathsetmacro{\xshift}{rand+ 0.05}
+% 					\draw[white, line width=0.2pt, text opacity=1*\i] (-0.6*\xshift em, \yshift em) -- (0.6*\xshift em, \yshift em);
+% 			}
+% 			\foreach \i in {0.1,0.4,...,1}{
+% 				\pgfmathsetmacro{\yshift}{rand*0.5}
+% 				\pgfmathsetmacro{\xshift}{rand + 0.05}
+% 					\draw[#2, line width=0.2pt, text opacity=1*\i] (-0.6*\xshift em, \yshift em) -- (0.6*\xshift em, \yshift em);
+% 			}
+
+% 	\end{tikzpicture}%
+% }
+
+% % Define SplitWord command using expl3
+% \ExplSyntaxOn
+% \NewDocumentCommand{\SplitWord}{m}
+% {
+	
+% 		\tl_map_inline:nn { #1 } { \glitchchar{##1} }
+
+% }
+% \ExplSyntaxOff
+
+% % Define glitchtext command using xparse
+% \NewDocumentCommand{\glitchtext}{m}{%
+% 	\BeginAccSupp{method=plain,ActualText={}}
+% 		\SplitWord{#1}%
+% 	\EndAccSupp{}
+% }
+
+
+
+ 
+
+
+% % \glitchtext{This\ is\ an\ example\ of\ glitch\ text}{glitchgreen}{\huge}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% \newcommand{\glitchtext}[1]{%
+%     \begin{tikzpicture}
+%         % Sombra difuminada para el resplandor exterior
+%         \node[scale=1, text=glitchgreen, font=\bfseries\ttfamily\huge, blur shadow={shadow xshift=0pt, shadow yshift=0pt, shadow blur steps=10, shadow scale=1.1, shadow opacity=0.4}] {#1};
+%         % Sombras glitch desplazadas en diferentes colores
+%         \node[scale=1, text=cyan, font=\bfseries\ttfamily\huge, opacity=0.2] at (-0.05, 0.05) {#1};
+%         \node[scale=1, text=green, font=\bfseries\ttfamily\huge, opacity=0.3] at (0.05, -0.05) {#1};
+%         % Texto principal
+%         \node[scale=1, text=glitchgreen, font=\bfseries\ttfamily\huge] {#1};
+%     \end{tikzpicture}%
+% }

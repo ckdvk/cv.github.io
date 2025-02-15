@@ -1,10 +1,18 @@
 \documentclass[a4paper,10pt]{article}
 
-\include{style_classes/dev_packages.tex}
-\include{style_classes/dev_commands.tex}
-\include{style_classes/dev_style.tex}
+\input{style_classes/dev_packages} 
+
+% \include{style_classes/dev_packages.tex}
+\input{style_classes/dev_commands.tex}
+\input{style_classes/dev_style.tex}
 
 \begin{document}
+
+
+
+
+
+
 
 \thispagestyle{empty}
 
@@ -12,13 +20,14 @@
 \ttfamily
 
 % CV PAGE
-{\large \textbf{{{\color{magenta}let} cv = }}}\jsonbracket{\{}{\Large}{bracketcolor}\vspace{-0.4cm}\\
+{\large 
+\textbf{{{{\color{keyword}let} \textcolor{varname}{cv} = }}}}\jsonbracket{\{}{\Large}{bracketcolor}\vspace{-0.4cm}\\
 
 	% PERSONAL DATA
 	\tab	\jsonkey{"data"}{\normalsize}{keycolor}\sp : \jsonbracket{\{}{\normalsize}{bracketcolor}\\
-		\tab\tab	\jsonkey{"name"}{\normalsize}{purple}\sp : \jsonstring{Javier Mart\'inez Perales}{\normalsize}{stringcolor},\\
-		\tab\tab	\jsonkey{"email"}{\normalsize}{purple}\sp : \jsonstring{{\href{mailto:javicemarpe@gmail.com}{javicemarpe@gmail.com}}}{\normalsize}{stringcolor},\\
-		\tab\tab	\jsonkey{"website"}{\normalsize}{purple}\sp: \jsonstring{{\href{https://ckdvk.github.io/cv.github.io/}{https://ckdvk.github.io/cv.github.io/}}}{\normalsize}{stringcolor},\\
+		\tab\tab	\jsonkey{"name"}{\normalsize}{subkeyscolor}\sp : \jsonstring{Javier Mart\'inez Perales}{\normalsize}{stringcolor},\\
+		\tab\tab	\jsonkey{"email"}{\normalsize}{subkeyscolor}\sp : \jsonstring{{\href{mailto:javicemarpe@gmail.com}{javicemarpe@gmail.com}}}{\normalsize}{stringcolor},\\
+		\tab\tab	\jsonkey{"website"}{\normalsize}{subkeyscolor}\sp: \jsonstring{{\href{https://ckdvk.github.io/cv.github.io/}{https://ckdvk.github.io/cv.github.io/}}}{\normalsize}{stringcolor},\\
 	\tab	\jsonbracket{\}}{\normalsize}{bracketcolor}{\normalsize ,}\vspace{0.1cm}
 
 
@@ -40,7 +49,7 @@
 
 \newpage
 % SKILLS AND PROJECTS
-{\large \textbf{{{\color{magenta}let} skills = }}}\jsonbracket{\{}{\Large}{bracketcolor}\vspace{-0.4cm}\\
+{\large \textbf{{{\color{keyword}let} \textcolor{varname}{skills} = }}}\jsonbracket{\{}{\Large}{bracketcolor}\vspace{-0.4cm}\\
 
 	% SKILLS
 	% Technologies
@@ -56,35 +65,35 @@
 
 \vspace{0.25cm}
 
-{\large \textbf{{{\color{magenta}let} public\_projects = }}}\jsonbracket{\{}{\Large}{bracketcolor}\vspace{-0.4cm}\\
+{\large \textbf{{{\color{keyword}let} \textcolor{varname}{public\_projects} = }}}\jsonbracket{\{}{\Large}{bracketcolor}\vspace{-0.4cm}\\
 
 
 	\tab	\jsonkey{"link\_shortener-frontend"}{\normalsize}{keycolor}\sp : \sp \jsonbracket{\{}{\normalsize}{bracketcolor}\\
-		\tab\tab	\jsonkey{"description"}{\normalsize}{purple}\sp : \jsonstring{Frontend for a link shortener web application}{\normalsize}{stringcolor},\\
-		\tab\tab	\jsonkey{"tech"}{\normalsize}{purple}\sp : \jsonstring{Vue, JavaScript, Node.js}{\normalsize}{stringcolor},\\
+		\tab\tab	\jsonkey{"description"}{\normalsize}{subkeyscolor}\sp : \jsonstring{Frontend for a link shortener web application}{\normalsize}{stringcolor},\\
+		\tab\tab	\jsonkey{"tech"}{\normalsize}{subkeyscolor}\sp : \jsonstring{Vue, JavaScript, Node.js}{\normalsize}{stringcolor},\\
 		% the link is https://github.com/ckdvk/link_shortener-frontend
-		\tab\tab	\jsonkey{"link"}{\normalsize}{purple}\sp : \jsonstring{\href[]{https://github.com/ckdvk/link_shortener-frontend}{https://github.com/ckdvk/link\_shortener-frontend}}{\normalsize}{stringcolor}\vspace{-0.2cm}\\
+		\tab\tab	\jsonkey{"link"}{\normalsize}{subkeyscolor}\sp : \jsonstring{\href[]{https://github.com/ckdvk/link_shortener-frontend}{https://github.com/ckdvk/link\_shortener-frontend}}{\normalsize}{stringcolor}\vspace{-0.2cm}\\
 		\tab	\jsonbracket{\}}{\normalsize}{bracketcolor}{\normalsize ,}\vspace{0.1cm}
 
 	\tab	\jsonkey{"link\_shortener-backend"}{\normalsize}{keycolor}\sp : \sp \jsonbracket{\{}{\normalsize}{bracketcolor}\\
-		\tab\tab	\jsonkey{"description"}{\normalsize}{purple}\sp : \jsonstring{Backend for a link shortener web application}{\normalsize}{stringcolor},\\
-		\tab\tab	\jsonkey{"tech"}{\normalsize}{purple}\sp : \jsonstring{Node.js, Express, SQLite}{\normalsize}{stringcolor},\\
+		\tab\tab	\jsonkey{"description"}{\normalsize}{subkeyscolor}\sp : \jsonstring{Backend for a link shortener web application}{\normalsize}{stringcolor},\\
+		\tab\tab	\jsonkey{"tech"}{\normalsize}{subkeyscolor}\sp : \jsonstring{Node.js, Express, SQLite}{\normalsize}{stringcolor},\\
 		% the link is
-		\tab\tab	\jsonkey{"link"}{\normalsize}{purple}\sp : \jsonstring{\href[]{https://github.com/ckdvk/link_shortener-backend}{https://github.com/ckdvk/link\_shortener-backend}}{\normalsize}{stringcolor}\vspace{-0.2cm}\\
+		\tab\tab	\jsonkey{"link"}{\normalsize}{subkeyscolor}\sp : \jsonstring{\href[]{https://github.com/ckdvk/link_shortener-backend}{https://github.com/ckdvk/link\_shortener-backend}}{\normalsize}{stringcolor}\vspace{-0.2cm}\\
 		\tab	\jsonbracket{\}}{\normalsize}{bracketcolor}{\normalsize ,}\vspace{0.1cm}
 
 	\tab	\jsonkey{"eloquent-javascript-es"}{\normalsize}{keycolor}\sp : \sp \jsonbracket{\{}{\normalsize}{bracketcolor}\\
-		\tab\tab	\jsonkey{"description"}{\normalsize}{purple}\sp : \jsonstring{Fork from \href{https://github.com/midudev/eloquent-javascript-es}{midudev}'s translation of the book \href{https://eloquentjavascript.net/}{Eloquent Javascript}}{\normalsize}{stringcolor},\\
-		\tab\tab	\jsonkey{"tech"}{\normalsize}{purple}\sp : \jsonstring{JavaScript, Markdown, \LaTeX, Markdown, make, HTML, git}{\normalsize}{stringcolor},\\
+		\tab\tab	\jsonkey{"description"}{\normalsize}{subkeyscolor}\sp : \jsonstring{Fork from \href{https://github.com/midudev/eloquent-javascript-es}{midudev}'s translation of the book \href{https://eloquentjavascript.net/}{Eloquent Javascript}}{\normalsize}{stringcolor},\\
+		\tab\tab	\jsonkey{"tech"}{\normalsize}{subkeyscolor}\sp : \jsonstring{JavaScript, Markdown, \LaTeX, Markdown, make, HTML, git}{\normalsize}{stringcolor},\\
 		% the link is
-		\tab\tab	\jsonkey{"link"}{\normalsize}{purple}\sp : \jsonstring{\href[]{https://github.com/ckdvk/eloquent-javascript-es}{https://github.com/ckdvk/eloquent-javascript-es}}{\normalsize}{stringcolor}\vspace{-0.2cm}\\
+		\tab\tab	\jsonkey{"link"}{\normalsize}{subkeyscolor}\sp : \jsonstring{\href[]{https://github.com/ckdvk/eloquent-javascript-es}{https://github.com/ckdvk/eloquent-javascript-es}}{\normalsize}{stringcolor}\vspace{-0.2cm}\\
 		\tab	\jsonbracket{\}}{\normalsize}{bracketcolor}{\normalsize ,}\vspace{0.1cm}
 
 	\tab	\jsonkey{"this\_cv"}{\normalsize}{keycolor}\sp : \sp \jsonbracket{\{}{\normalsize}{bracketcolor}\\
-		\tab\tab	\jsonkey{"description"}{\normalsize}{purple}\sp : \jsonstring{This CV}{\normalsize}{stringcolor},\\
-		\tab\tab	\jsonkey{"tech"}{\normalsize}{purple}\sp : \jsonstring{\LaTeX, Python, git, JavaScript, HTML, CSS, Jupyter}{\normalsize}{stringcolor},\\
+		\tab\tab	\jsonkey{"description"}{\normalsize}{subkeyscolor}\sp : \jsonstring{This CV}{\normalsize}{stringcolor},\\
+		\tab\tab	\jsonkey{"tech"}{\normalsize}{subkeyscolor}\sp : \jsonstring{\LaTeX, Python, git, JavaScript, HTML, CSS, Jupyter}{\normalsize}{stringcolor},\\
 		% the link is
-		\tab\tab	\jsonkey{"link"}{\normalsize}{purple}\sp : \jsonstring{\href[]{https://ckdvk.github.io/cv.github.io/}{https://ckdvk.github.io/cv.github.io/}}{\normalsize}{stringcolor}\vspace{-0.2cm}\\
+		\tab\tab	\jsonkey{"link"}{\normalsize}{subkeyscolor}\sp : \jsonstring{\href[]{https://ckdvk.github.io/cv.github.io/}{https://ckdvk.github.io/cv.github.io/}}{\normalsize}{stringcolor}\vspace{-0.2cm}\\
 		\tab	\jsonbracket{\}}{\normalsize}{bracketcolor}{\normalsize ,}\vspace{0.1cm}
 
 	\jsonbracket{\}}{\Large}{bracketcolor}{\Large ;}
@@ -92,7 +101,7 @@
 
 \vspace{0.3cm}
 
-{\large \textbf{{{\color{magenta}let} math\_research = }}}\jsonbracket{\{}{\Large}{bracketcolor}\vspace{-0.4cm}\\
+{\large \textbf{{{\color{keyword}let} \textcolor{varname}{math\_research} = }}}\jsonbracket{\{}{\Large}{bracketcolor}\vspace{-0.4cm}\\
 
 	% BIBITEMS
 	\begin{refitem}

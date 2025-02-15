@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.10.22)  9 FEB 2025 02:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.10.22)  15 FEB 2025 04:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -24,6 +24,11 @@ File: size10.clo 2024/02/08 v1.4n Standard LaTeX file (size option)
 \belowcaptionskip=\skip50
 \bibindent=\dimen141
 )
+
+LaTeX Warning: \include should only be used after \begin{document} on input lin
+e 3.
+
+(style_classes/dev_packages.tex
 (C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 )
@@ -246,90 +251,467 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip51
 )
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcolorbox.
+sty
+Package: tcolorbox 2024/09/27 version 6.4.0 text color boxes
+
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\ti
+kz.sty
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.s
+ty
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs
+.sty
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfu
+til-common.tex
+\pgfutil@everybye=\toks18
+\pgfutil@tempdima=\dimen146
+\pgfutil@tempdimb=\dimen147
+)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfu
+til-latex.def
+\pgfutil@abb=\box52
+)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfr
+cs.code.tex
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.t
+ex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfco
+re.sty
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.st
+y
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.st
+y
+Package: graphics 2024/05/23 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphic
+s.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+)
+\Gin@req@height=\dimen148
+\Gin@req@width=\dimen149
+)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfs
+ys.sty
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pg
+fsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfk
+eys.code.tex
+\pgfkeys@pathtoks=\toks19
+\pgfkeys@temptoks=\toks20
+
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfk
+eyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks21
+))
+\pgf@x=\dimen150
+\pgf@y=\dimen151
+\pgf@xa=\dimen152
+\pgf@ya=\dimen153
+\pgf@xb=\dimen154
+\pgf@yb=\dimen155
+\pgf@xc=\dimen156
+\pgf@yc=\dimen157
+\pgf@xd=\dimen158
+\pgf@yd=\dimen159
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count280
+\c@pgf@countb=\count281
+\c@pgf@countc=\count282
+\c@pgf@countd=\count283
+\t@pgf@toka=\toks22
+\t@pgf@tokb=\toks23
+\t@pgf@tokc=\toks24
+\pgf@sys@id@count=\count284
+
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pg
+f.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pg
+fsys-pdftex.def
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pg
+fsys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pg
+fsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count285
+\pgfsyssoftpath@bigbuffer@items=\count286
+)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pg
+fsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
+core.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.c
+ode.tex
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathut
+il.code.tex)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathpa
+rser.code.tex
+\pgfmath@dimen=\dimen160
+\pgfmath@count=\count287
+\pgfmath@box=\box53
+\pgfmath@toks=\toks25
+\pgfmath@stack@operand=\toks26
+\pgfmath@stack@operation=\toks27
+)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfu
+nctions.code.tex)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfu
+nctions.basic.code.tex)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfu
+nctions.trigonometric.code.tex)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfu
+nctions.random.code.tex)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfu
+nctions.comparison.code.tex)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfu
+nctions.base.code.tex)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfu
+nctions.round.code.tex)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfu
+nctions.misc.code.tex)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfu
+nctions.integerarithmetics.code.tex)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathca
+lc.code.tex)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfl
+oat.code.tex
+\c@pgfmathroundto@lastzeros=\count288
+))
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.co
+de.tex)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
+corepoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen161
+\pgf@picmaxx=\dimen162
+\pgf@picminy=\dimen163
+\pgf@picmaxy=\dimen164
+\pgf@pathminx=\dimen165
+\pgf@pathmaxx=\dimen166
+\pgf@pathminy=\dimen167
+\pgf@pathmaxy=\dimen168
+\pgf@xx=\dimen169
+\pgf@xy=\dimen170
+\pgf@yx=\dimen171
+\pgf@yy=\dimen172
+\pgf@zx=\dimen173
+\pgf@zy=\dimen174
+)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
+corepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen175
+\pgf@path@lasty=\dimen176
+)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
+corepathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen177
+\pgf@shorten@start@additional=\dimen178
+)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
+corescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box54
+\pgf@hbox=\box55
+\pgf@layerbox@main=\box56
+\pgf@picture@serial@count=\count289
+)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
+coregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen179
+)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
+coretransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen180
+\pgf@pt@y=\dimen181
+\pgf@pt@temp=\dimen182
+)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
+corequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
+coreobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
+corepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
+corearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen183
+)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
+coreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen184
+\pgf@sys@shading@range@num=\count290
+\pgf@shadingcount=\count291
+)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
+coreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
+coreexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box57
+)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
+corelayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
+coretransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
+corepatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
+corerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmod
+uleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box58
+)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmod
+uleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pg
+fcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen185
+\pgf@nodesepend=\dimen186
+)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pg
+fcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor
+.sty
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkey
+s.sty
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfk
+eys.code.tex))
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.c
+ode.tex))
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgff
+or.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen187
+\pgffor@skip=\dimen188
+\pgffor@stack=\toks28
+\pgffor@toks=\toks29
+))
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/
+tikz\tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgfl
+ibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count292
+\pgfplotmarksize=\dimen189
+)
+\tikz@lastx=\dimen190
+\tikz@lasty=\dimen191
+\tikz@lastxsaved=\dimen192
+\tikz@lastysaved=\dimen193
+\tikz@lastmovetox=\dimen194
+\tikz@lastmovetoy=\dimen195
+\tikzleveldistance=\dimen196
+\tikzsiblingdistance=\dimen197
+\tikz@figbox=\box59
+\tikz@figbox@bg=\box60
+\tikz@tempbox=\box61
+\tikz@tempbox@bg=\box62
+\tikztreelevel=\count293
+\tikznumberofchildren=\count294
+\tikznumberofcurrentchild=\count295
+\tikz@fig@count=\count296
+
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmod
+ulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count297
+\pgfmatrixcurrentcolumn=\count298
+\pgf@matrix@numberofcolumns=\count299
+)
+\tikz@expandcount=\count300
+
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/
+tikz/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks30
+\verbatim@line=\toks31
+\verbatim@in@stream=\read3
+)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimspace
+s.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)
+\@envbody=\toks32
+)
+\tcb@titlebox=\box63
+\tcb@upperbox=\box64
+\tcb@lowerbox=\box65
+\tcb@phantombox=\box66
+\c@tcbbreakpart=\count301
+\c@tcblayer=\count302
+\c@tcolorbox@number=\count303
+\l__tcobox_tmpa_box=\box67
+\l__tcobox_tmpa_dim=\dimen198
+\tcb@temp=\box68
+\tcb@temp=\box69
+\tcb@temp=\box70
+\tcb@temp=\box71
+)
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/latex/ulem\ulem.sty
+\UL@box=\box72
+\UL@hyphenbox=\box73
+\UL@skip=\skip52
+\UL@hook=\toks33
+\UL@height=\dimen199
+\UL@pe=\count304
+\UL@pixel=\dimen256
+\ULC@box=\box74
+Package: ulem 2019/11/18
+\ULdepth=\dimen257
+))
+
+LaTeX Warning: \include should only be used after \begin{document} on input lin
+e 4.
+
+(style_classes/dev_commands.tex)
+
+LaTeX Warning: \include should only be used after \begin{document} on input lin
+e 5.
+
+(style_classes/dev_style.tex
 (C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.st
 y
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count280
-\Gm@cntv=\count281
-\c@Gm@tempcnt=\count282
-\Gm@bindingoffset=\dimen146
-\Gm@wd@mp=\dimen147
-\Gm@odd@mp=\dimen148
-\Gm@even@mp=\dimen149
-\Gm@layoutwidth=\dimen150
-\Gm@layoutheight=\dimen151
-\Gm@layouthoffset=\dimen152
-\Gm@layoutvoffset=\dimen153
-\Gm@dimlist=\toks18
+\Gm@cnth=\count305
+\Gm@cntv=\count306
+\c@Gm@tempcnt=\count307
+\Gm@bindingoffset=\dimen258
+\Gm@wd@mp=\dimen259
+\Gm@odd@mp=\dimen260
+\Gm@even@mp=\dimen261
+\Gm@layoutwidth=\dimen262
+\Gm@layoutheight=\dimen263
+\Gm@layouthoffset=\dimen264
+\Gm@layoutvoffset=\dimen265
+\Gm@dimlist=\toks34
 
 (C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cf
-g)) (style_classes/dev_style.tex)
-Runaway argument?
-c:/Users/javimar2/Development/cv.github.io/new_dev.tex:27: File ended while sca
-nning use of \@newenv.
-<inserted text> 
-                \par 
-l.27 \input{style_classes/dev_style.tex}
-                                        
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
+g)))
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 7.
 
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 29
-.
-(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
+ (C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 (C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-
 pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count283
-\l__pdf_internal_box=\box52
-) (new_dev.aux)
+\l__color_backend_stack_int=\count308
+\l__pdf_internal_box=\box75
+)
+No file new_dev.aux.
 \openout1 = `new_dev.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
 
 (C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf
 .mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count284
-\scratchdimen=\dimen154
-\scratchbox=\box53
-\nofMPsegments=\count285
-\nofMParguments=\count286
-\everyMPshowfont=\toks19
-\MPscratchCnt=\count287
-\MPscratchDim=\dimen155
-\MPnumerator=\count288
-\makeMPintoPDFobject=\count289
-\everyMPtoPDFconversion=\toks20
+\scratchcounter=\count309
+\scratchdimen=\dimen266
+\scratchbox=\box76
+\nofMPsegments=\count310
+\nofMParguments=\count311
+\everyMPshowfont=\toks35
+\MPscratchCnt=\count312
+\MPscratchDim=\dimen267
+\MPnumerator=\count313
+\makeMPintoPDFobject=\count314
+\everyMPtoPDFconversion=\toks36
 )
-Package hyperref Info: Link coloring OFF on input line 29.
- (new_dev.out) (new_dev.out)
-\@outlinefile=\write3
-\openout3 = `new_dev.out'.
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopd
+f-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sy
+s.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Package hyperref Info: Link coloring OFF on input line 7.
+\@outlinefile=\write4
+\openout4 = `new_dev.out'.
 
 
 *geometry* driver: auto-detecting
@@ -340,15 +722,15 @@ Package hyperref Info: Link coloring OFF on input line 29.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(28.90755pt, 546.91911pt, 21.68121pt)
-* v-part:(T,H,B)=(10.84006pt, 823.36673pt, 10.84006pt)
+* h-part:(L,W,R)=(28.90755pt, 481.87656pt, 86.72377pt)
+* v-part:(T,H,B)=(21.68121pt, 812.52557pt, 10.84006pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=546.91911pt
-* \textheight=823.36673pt
+* \textwidth=481.87656pt
+* \textheight=812.52557pt
 * \oddsidemargin=-43.36244pt
 * \evensidemargin=-43.36244pt
-* \topmargin=-98.42993pt
+* \topmargin=-87.58878pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -367,80 +749,293 @@ Package hyperref Info: Link coloring OFF on input line 29.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
-4.
+6.
 (C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 40.
+
+
+c:/Users/javimar2/Development/cv.github.io/new_dev.tex:40: Package pgfkeys Erro
+r: I do not know the key '/tikz/double copy shadow', to which you passed 'shado
+w xshift=0.7pt, shadow yshift=0.7pt, opacity=0.5, fill=keyword', and I am going
+ to ignore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.40 ...eyword}let} \textcolor{varname}{cv} = }}}}
+                                                  }\jsonbracket{\{}{\Large}{...
+This error message was generated by an \errmessage
+command, so I can't give any explicit help.
+Pretend that you're Hercule Poirot: Examine all clues,
+and deduce the truth by order and method.
+
+
+c:/Users/javimar2/Development/cv.github.io/new_dev.tex:40: Package pgfkeys Erro
+r: I do not know the key '/tikz/double copy shadow', to which you passed 'shado
+w xshift=-0.7pt, shadow yshift=-0.7pt, opacity=0.5, fill=keyword', and I am goi
+ng to ignore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.40 ...eyword}let} \textcolor{varname}{cv} = }}}}
+                                                  }\jsonbracket{\{}{\Large}{...
+(That was another \errmessage.)
+
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <20.74> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 40.
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+
+ []
+
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 36.
-
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
-
- []
-
-(docs/items/employment.tex
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
-
- []
-
-) (docs/items/education.tex
-
-docs/items/education.tex:24: LaTeX Error: Environment firsteducation undefined.
-
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.24 		\begin{firsteducation}
-                             
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-docs/items/education.tex:29: LaTeX Error: \begin{document} ended by \end{firste
-ducation}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.29 		\end{firsteducation}
-                           
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-)
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 43.
+(docs/items/employment.tex) (docs/items/education.tex)
 
 [1
 
 {C:/Users/javimar2/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/j
 avimar2/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}]
-(new_dev.aux)
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+
+ []
+
+(docs/items/tech_proficientskills.tex
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
+.
+
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+.
+
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+1.
+
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+1.
+
+(C:\Users\javimar2\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 1.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 1.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 1.
+)
+(docs/items/tech_familiarskills.tex)
+Overfull \hbox (1.67303pt too wide) in paragraph at lines 72--74
+[][]  [][]\T1/lmtt/b/n/10 "technologies"[][] []\T1/lmtt/m/n/10 : [][[] C,[] []P
+ython,[] []Git,[] []L[]T[]X,[] []Adobe Photoshop,[] []Adobe Illustrator,[] []Ja
+vaScript,[]
+ []
+
+
+Overfull \hbox (18.62204pt too wide) in paragraph at lines 72--74
+[]\T1/lmtt/m/n/10 Vue , [] []Bash,[] []WordPress,[] []HTML,[] []PHP,[] []MySQL 
+,[] []Docker,[] []PostgreSQL,[] []CSS,[] []Angular,[] []Typescript,[] []Flask,[
+]
+ []
+
+(docs/items/soft_strongskills.tex)
+Overfull \hbox (1.1221pt too wide) in paragraph at lines 76--79
+[][]  [][]\T1/lmtt/b/n/10 "other skills"[][] []\T1/lmtt/m/n/10 : [][[] Spanish 
+(mother tongue),[] []English (B2 level),[] []International Teamwork,[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
+
+ []
+
+
+Overfull \hbox (51.55923pt too wide) in paragraph at lines 124--126
+[]  [][]  [][]\T1/lmtt/b/n/10 "title"[][] []\T1/lmtt/m/n/10 : [] 
+ []
+
+
+Overfull \hbox (56.80922pt too wide) in paragraph at lines 124--126
+[]  [][]  [][]\T1/lmtt/b/n/10 "author"[][] []\T1/lmtt/m/n/10 : [] 
+ []
+
+
+Overfull \hbox (62.0592pt too wide) in paragraph at lines 124--126
+[]  [][]  [][]\T1/lmtt/b/n/10 "journal"[][] []\T1/lmtt/m/n/10 : [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--128
+[][]\T1/lmtt/m/n/10 "Remarks on vector-valued Gagliardo and Poincaré-Sobolev ty
+pe inequalities with
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--128
+[][]\T1/lmtt/m/n/10 "Potentials and Partial Differential Equations. The Legacy 
+of David R. Adams,
+ []
+
+
+Overfull \hbox (51.55923pt too wide) in paragraph at lines 128--130
+[]  [][]  [][]\T1/lmtt/b/n/10 "title"[][] []\T1/lmtt/m/n/10 : [] 
+ []
+
+
+Overfull \hbox (56.80922pt too wide) in paragraph at lines 128--130
+[]  [][]  [][]\T1/lmtt/b/n/10 "author"[][] []\T1/lmtt/m/n/10 : [] 
+ []
+
+
+Overfull \hbox (62.0592pt too wide) in paragraph at lines 128--130
+[]  [][]  [][]\T1/lmtt/b/n/10 "journal"[][] []\T1/lmtt/m/n/10 : [] 
+ []
+
+
+Overfull \hbox (51.55923pt too wide) in paragraph at lines 132--134
+[]  [][]  [][]\T1/lmtt/b/n/10 "title"[][] []\T1/lmtt/m/n/10 : [] 
+ []
+
+
+Overfull \hbox (56.80922pt too wide) in paragraph at lines 132--134
+[]  [][]  [][]\T1/lmtt/b/n/10 "author"[][] []\T1/lmtt/m/n/10 : [] 
+ []
+
+
+Overfull \hbox (62.0592pt too wide) in paragraph at lines 132--134
+[]  [][]  [][]\T1/lmtt/b/n/10 "journal"[][] []\T1/lmtt/m/n/10 : [] 
+ []
+
+
+Overfull \hbox (51.55923pt too wide) in paragraph at lines 136--138
+[]  [][]  [][]\T1/lmtt/b/n/10 "title"[][] []\T1/lmtt/m/n/10 : [] 
+ []
+
+
+Overfull \hbox (56.80922pt too wide) in paragraph at lines 136--138
+[]  [][]  [][]\T1/lmtt/b/n/10 "author"[][] []\T1/lmtt/m/n/10 : [] 
+ []
+
+
+Overfull \hbox (62.0592pt too wide) in paragraph at lines 136--138
+[]  [][]  [][]\T1/lmtt/b/n/10 "journal"[][] []\T1/lmtt/m/n/10 : [] 
+ []
+
+
+Overfull \hbox (51.55923pt too wide) in paragraph at lines 140--142
+[]  [][]  [][]\T1/lmtt/b/n/10 "title"[][] []\T1/lmtt/m/n/10 : [] 
+ []
+
+
+Overfull \hbox (56.80922pt too wide) in paragraph at lines 140--142
+[]  [][]  [][]\T1/lmtt/b/n/10 "author"[][] []\T1/lmtt/m/n/10 : [] 
+ []
+
+
+Overfull \hbox (62.0592pt too wide) in paragraph at lines 140--142
+[]  [][]  [][]\T1/lmtt/b/n/10 "journal"[][] []\T1/lmtt/m/n/10 : [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
+[][]\T1/lmtt/m/n/10 "A note on generalized Poincaré-type inequalities with appl
+ications to weighted
+ []
+
+
+Overfull \hbox (51.55923pt too wide) in paragraph at lines 144--146
+[]  [][]  [][]\T1/lmtt/b/n/10 "title"[][] []\T1/lmtt/m/n/10 : [] 
+ []
+
+
+Overfull \hbox (56.80922pt too wide) in paragraph at lines 144--146
+[]  [][]  [][]\T1/lmtt/b/n/10 "author"[][] []\T1/lmtt/m/n/10 : [] 
+ []
+
+
+Overfull \hbox (62.0592pt too wide) in paragraph at lines 144--146
+[]  [][]  [][]\T1/lmtt/b/n/10 "journal"[][] []\T1/lmtt/m/n/10 : [] 
+ []
+
+
+Overfull \hbox (51.55923pt too wide) in paragraph at lines 148--150
+[]  [][]  [][]\T1/lmtt/b/n/10 "title"[][] []\T1/lmtt/m/n/10 : [] 
+ []
+
+
+Overfull \hbox (56.80922pt too wide) in paragraph at lines 148--150
+[]  [][]  [][]\T1/lmtt/b/n/10 "author"[][] []\T1/lmtt/m/n/10 : [] 
+ []
+
+
+Overfull \hbox (62.0592pt too wide) in paragraph at lines 148--150
+[]  [][]  [][]\T1/lmtt/b/n/10 "journal"[][] []\T1/lmtt/m/n/10 : [] 
+ []
+
+
+Overfull \hbox (11.62213pt too wide) in paragraph at lines 152--154
+[]  [][]  [][]\T1/lmtt/b/n/10 "title"[][] []\T1/lmtt/m/n/10 : []"On Bloom type 
+estimates for iterated commutators of fractional integrals"[], 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--154
+
+ []
+
+
+
+[2] (new_dev.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-09-10>
  ***********
-Package rerunfilecheck Info: File `new_dev.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+Package rerunfilecheck Warning: File `new_dev.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `new_dev.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 9361 strings out of 473899
- 146063 string characters out of 5725083
- 567431 words of memory out of 5000000
- 32146 multiletter control sequences out of 15000+600000
- 562777 words of font info for 41 fonts, out of 8000000 for 9000
+ 21988 strings out of 473899
+ 432884 string characters out of 5725083
+ 811158 words of memory out of 5000000
+ 44499 multiletter control sequences out of 15000+600000
+ 575168 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,5n,79p,584b,431s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/javimar2/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtk10
-.pfb><C:/Users/javimar2/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmt
-t10.pfb><C:/Users/javimar2/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/
-lmtt12.pfb>
-Output written on new_dev.pdf (1 page, 67967 bytes).
+ 123i,7n,126p,584b,617s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/javimar2/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.
+pfb><C:/Users/javimar2/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtk
+10.pfb><C:/Users/javimar2/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
+mtt10.pfb><C:/Users/javimar2/AppData/Local/Programs/MiKTeX/fonts/type1/public/l
+m/lmtt12.pfb><C:/Users/javimar2/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/lm/lmtt8.pfb>
+Output written on new_dev.pdf (2 pages, 122087 bytes).
 PDF statistics:
- 35 PDF objects out of 1000 (max. 8388607)
- 2 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 58 PDF objects out of 1000 (max. 8388607)
+ 3 named destinations out of 1000 (max. 500000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
