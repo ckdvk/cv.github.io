@@ -1,0 +1,251 @@
+:root {
+    --strong: white;
+    --semi-strong: #808080;
+    --soft: #a9a9a9;
+    --background: #3b3b3b;
+    --green: #14ffa5;
+     /* define a custom variable with the value of red */
+}
+
+body {
+    position: relative;
+    margin: 0;
+    /* padding: 2rem; */
+    font-family: 'Overpass Mono', monospace;
+    color: #ffffff;
+    background: radial-gradient(circle at center, #202020 0%, #0c0c0c 100%);
+    overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: -20px;
+}
+
+body > * {
+    position: relative;
+    z-index: 1;
+}
+
+a {
+    color: #39ff14;
+    text-decoration: underline;
+}
+
+header {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 1rem;
+	z-index: 10000;
+}
+
+
+
+
+nav a {
+	/* margin-right: 1.5rem; */
+	font-weight: bold;
+	/* centered */
+	text-align: center;
+	/* justify */
+	display: inline-block;;
+	/* display: block; */
+	margin: 0 auto;
+}
+
+
+
+section {
+    margin-bottom: 2rem;
+}
+
+
+h1, h2 {
+	color: #14ffa5;
+	text-align: center;
+}
+
+h2 {
+	text-transform: uppercase;
+}
+h1{
+	font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+	margin-bottom: 0px;
+}
+
+/* h3 is centered */
+h3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bold;
+	color: gray;
+	left: 30%;
+}
+
+@media (max-width: 600px) {
+	h3 {
+		left: 12%;
+		justify-content: center;
+	}
+}
+
+.subtitlenamestyle {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    color: var(--semi-strong);
+    /* white-space: nowrap; */
+    word-spacing:-5px;
+    padding-left: 20px;
+
+  /* letter-spacing: 1px; */
+}
+
+#subtitle {
+  text-align: center;
+}
+
+.texto-brillo-lima, h1, h2 {
+	transition: text-shadow 0.5s ease;
+}
+
+.texto-brillo-lima:hover, h1:hover, h2:hover {
+	text-shadow: 0 0 20px rgb(0, 255, 176);
+}
+
+.link-brillo-lima {
+	color:var(--green); 
+	font-family: 'Courier New', Courier, monospace;
+	text-decoration: none;
+	transition: text-shadow 0.5s ease;
+}
+
+.link-brillo-lima:hover {
+	text-shadow: 0 0 12px rgb(49, 255, 176);
+}
+
+
+.brillante span {
+	display: inline-block;
+	transition: text-shadow 0.5s ease-in-out;
+}
+
+.brillante:hover span {
+	transition-duration: 0.02s;
+}
+
+.brillante span:hover {
+	text-shadow: 0 0 10px rgb(255, 255, 255);
+	cursor: default;
+}
+
+.navheader {
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 60px;
+	width: auto;
+	padding: 0 2rem;
+	backdrop-filter: blur(10px);
+	background-color: rgba(0, 255, 149, 0.363);
+	z-index: 10000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+/* Content aligned to the left inside .navheader */
+.navheader-left {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding-left: 5%;
+}
+
+/* Content aligned to the right inside .navheader */
+.navheader-right {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin-left: auto;
+	padding-right: -5%;
+}
+
+
+
+
+.nav-button {
+  background-color: #4caf4f00; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  /* color of font */
+  color: var(--green);
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	z-index: 9999999;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #222222e0;
+	/* the blur thing */
+	backdrop-filter: blur(10px);
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+	z-index: 9999999;
+}
+.dropdown-content a {
+	color: var(--green);
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	font-family: monospace;
+}
+.dropdown-content a:hover {
+	/* background-color: #333; */
+}
+
+/* a ´content´ class for the content of each section */
+
+.content {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 1rem;
+	border-radius: 8px;
+}
+
+.employment-description {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  width: 100%;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.employment-description.visible {
+  max-height: 500px; /* suficientemente grande para cubrir cualquier contenido */
+}
+
+.employment-item {
+  max-width: 700px; /* o un valor adecuado */
+  width: 100%;
+}
+
+

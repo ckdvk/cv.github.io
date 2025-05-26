@@ -1,0 +1,263 @@
+<!-- Template for a very dark gray (almost black) webpage showing my name, links and each section of my cv in brilliant TTY-like green coloured typography. Everything is written in HTML (in new_index.html) + CSS (in new_styles.css). Javascript is only used to take the info from the tex files -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Javier Martínez Perales - CV</title>
+	<link rel="stylesheet" href="new_style.css">
+		<script>
+		var dark = true;
+		var strongColor = 'white';
+		var semiStrongColor= '#808080';
+		var softColor= '#a9a9a9';
+		var backgroundColor= '#3b3b3b';
+		function toggleTheme() {
+
+			if( dark ) {
+				strongColor = 'black';
+				semiStrongColor= '#808080';
+				softColor= '#a9a9a9';
+				backgroundColor= '#fdfdfd';
+				dark = !dark;
+			} else {
+				strongColor = 'white';
+				semiStrongColor= '#808080';
+				softColor= '#a9a9a9';
+				backgroundColor= '#3b3b3b';
+			dark = !dark;
+			}
+			document.documentElement.style.setProperty('--strong', strongColor);
+			document.documentElement.style.setProperty('--semi-strong', semiStrongColor);
+			document.documentElement.style.setProperty('--soft', softColor);
+			document.documentElement.style.setProperty('--background', backgroundColor);
+			console.log('CHANGECOLORS() called')
+
+		}
+	</script>
+</head>
+
+
+
+
+<body>
+	<header>
+		<div class="navheader">
+
+<!-- the left header, of class navheader-lef, contains a menu button which will contain a list of links to the different sections of the cv -->
+			
+			<div class="navheader-left">
+				<div class="dropdown">
+					<button class="nav-button link-brillo-lima" onclick="toggleDropdown()">
+						<span class="menu-icon"></span>
+						<span class="menu-text">☰ Sections </span>
+					</button>
+					<div id="dropdown-menu" class="dropdown-content">
+						<a href="#employment" class="link-brillo-lima">Employment</a>
+						<a href="#experience" class="link-brillo-lima">Experience</a>
+						<a href="#education" class="link-brillo-lima">Education</a>
+						<a href="#skills" class="link-brillo-lima">Skills</a>
+						<a href="#contact" class="link-brillo-lima">Contact</a>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="navheader-right">
+				<a class="link-brillo-lima"  href="cv_martinez_perales.pdf" download>
+					Downloadable CV
+				</a>
+				<!-- &nbsp;&nbsp;&nbsp;
+				<a  href="mailto:javicemarpe@gmail.com" class="link-brillo-lima">
+					javicemarpe@gmail.com
+				</a>  -->
+				<!-- <a class="link-brillo-lima"  href="research.html">
+					Research page
+				</a> -->
+				</div>
+
+		</div>
+
+
+		<h1><span style="color:#ffffff;">{</span>Javier Martínez Perales<span style="color:#ffffff;">}</span></h1>
+		<br>
+		<h3 id="subtitle" class="subtitlenamestyle">
+					Harmonic Analysis, <br><span style="color: rgb(149, 149, 149)">&</span> Software Development
+		</h3>
+		<br>
+		<br>
+		<nav>
+				<!-- <div class="subtitlenamestyle" > -->
+					<a href ="https://github.com/ckdvk" class="link-brillo-lima" >GitHub</a>
+					&emsp;
+					<a href ="https://arxiv.org/search/?searchtype=author&query=Mart%C3%ADnez-Perales%2C+J+C" class="link-brillo-lima">arXiv</a>
+					<!-- tabulation -->
+					&emsp;
+
+					<a href ="https://www.researchgate.net/profile/Javier-Martinez-Perales" class="link-brillo-lima">ResearchGate</a>
+					&emsp;
+					<a href ="https://scholar.google.com/citations?user=DQQCMk0AAAAJ&hl=es" class="link-brillo-lima">Scholar</a>
+					&emsp;
+					<a href ="https://www.deviantart.com/j--c" class="link-brillo-lima">DeviantART</a>
+					&emsp;
+				<!-- </div> -->
+		</nav>
+	</header>
+
+
+
+
+
+	
+	<main>
+
+
+
+
+		<section id="employment">
+			<h2 class="texto-brillo-lima">Employment</h2>
+			<div id="employmentItems" class="content brillante">
+			
+			</div>
+		</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<section id="about">
+			
+			<h2  class="texto-brillo-lima">About</h2>
+			<p class="brillante">Short bio or introduction.</p>
+			<p class="brillante">Hola, mundo!</p>
+
+
+		</section>
+		<section id="experience">
+			<h2>Experience</h2>
+			<ul>
+				<li>
+					<strong>Job Title</strong> at Company<br>
+					<span>Year - Year</span><br>
+					<span>Description of your role and achievements.</span>
+				</li>
+				<!-- Add more jobs as needed -->
+			</ul>
+		</section>
+		<section id="education">
+			<h2>Education</h2>
+			<ul>
+				<li>
+					<strong>Degree</strong> at Institution<br>
+					<span>Year - Year</span>
+				</li>
+				<!-- Add more education as needed -->
+			</ul>
+		</section>
+		<section id="skills">
+			<h2>Skills</h2>
+			<ul>
+				<li>Skill 1</li>
+				<li>Skill 2</li>
+				<!-- Add more skills as needed -->
+			</ul>
+		</section>
+		<section id="contact">
+			<h2>Contact</h2>
+			<p class="brillante">Email: <a href="mailto:your@email.com">your@email.com</a></p>
+			<!-- Add more contact info if needed -->
+		</section>
+	</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+	// Brilliant text effect
+	const elementos = document.getElementsByClassName("brillante");
+
+	for (const el of elementos) {
+	const letras = el.textContent.split("");
+	el.innerHTML = letras.map(l => `<span>${l === " " ? "&nbsp;" : l}</span>`).join("");
+	}
+
+</script>
+	<script src="js/effects/olumn-writer.min.js"></script>
+
+	<script>
+		new OlumWriter({
+		container: document.getElementById("subtitle"),
+		sentences: ["Harmonic Analysis",  "Software Development"],
+		interval: 3000, // optional (time between each sentence)
+		speed: 1000, // optional (speed of writing each sentence)
+		reverse: false, // optional (enable/disable backward writing), default is false
+  		  },
+		);
+		
+	</script>
+
+
+				<script>
+					function toggleDropdown() {
+						const menu = document.getElementById('dropdown-menu');
+						menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+					}
+					// Optional: close dropdown when clicking outside
+					document.addEventListener('click', function(event) {
+						const dropdown = document.querySelector('.dropdown');
+						if (!dropdown.contains(event.target)) {
+							document.getElementById('dropdown-menu').style.display = 'none';
+						}
+					});
+				</script>
+
+
+
+
+
+	<script type="module"  src="js/texcontent/skills.js"></script>
+	<script type="module"  src="js/texcontent/research.js"></script>
+	<script type="module"  src="js/texcontent/new_employment.js"></script>
+	<script type="module"  src="js/texcontent/education.js"></script>
+	<script src="js/itemscript.js"></script>
