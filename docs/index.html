@@ -14,23 +14,23 @@
     <script>
         var dark = true;
         var strongColor = 'white';
-        var semiStrongColor= '#808080';
-        var softColor= '#a9a9a9';
-        var backgroundColor= '#3b3b3b';
+        var semiStrongColor = '#808080';
+        var softColor = '#a9a9a9';
+        var backgroundColor = '#3b3b3b';
         function toggleTheme() {
 
-            if( dark ) {
+            if (dark) {
                 strongColor = 'black';
-                semiStrongColor= '#808080';
-                softColor= '#a9a9a9';
-                backgroundColor= '#fdfdfd';
+                semiStrongColor = '#808080';
+                softColor = '#a9a9a9';
+                backgroundColor = '#fdfdfd';
                 dark = !dark;
             } else {
                 strongColor = 'white';
-                semiStrongColor= '#808080';
-                softColor= '#a9a9a9';
-                backgroundColor= '#3b3b3b';
-            dark = !dark;
+                semiStrongColor = '#808080';
+                softColor = '#a9a9a9';
+                backgroundColor = '#3b3b3b';
+                dark = !dark;
             }
             document.documentElement.style.setProperty('--strong', strongColor);
             document.documentElement.style.setProperty('--semi-strong', semiStrongColor);
@@ -38,18 +38,20 @@
             document.documentElement.style.setProperty('--background', backgroundColor);
             console.log('CHANGECOLORS() called')
 
-		}
+        }
     </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-WKKn9H5l5DQ2g2RNhP7dWjLZw0xbCJD77rzMHJ56Vj/Ab9od5M5n2A5NKRUCPc25NjwNnZu3tq4x4+Bc2X9UMQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-WKKn9H5l5DQ2g2RNhP7dWjLZw0xbCJD77rzMHJ56Vj/Ab9od5M5n2A5NKRUCPc25NjwNnZu3tq4x4+Bc2X9UMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
 <body>
 
     <input type="checkbox" id="theme-toggle" class="theme-toggle" onclick="toggleTheme()" />
-<label for="theme-toggle" class="theme-toggle-label">
-  <span class="theme-toggle-icon"></span>
-</label>
+    <label for="theme-toggle" class="theme-toggle-label">
+        <span class="theme-toggle-icon"></span>
+    </label>
 
 
     <div>
@@ -61,89 +63,94 @@
         </head>
 
         <body>
-            
+
 
             <header class="headercontainer">
-            <div class="leftcolumnheader">
+                <div class="leftcolumnheader">
 
 
-                <a href="index.html" class="namestyle" style =" text-decoration: none;">
-                <h1 id ="title" class="titlenamestyle">
-                    <span style="color: var(--strong);">
-                        {
-                        </span>
-                    "Javier"
-                    <span style="color: var(--strong);">
-                        :
-                    </span> 
-                    <span style="color: soft">
-                        "Mart&iacute;nez &ThinSpace;Perales"
-                    </span>
-                    <span style="color: var(--strong);">
-                        }
-                    </span>
-                </h1>
-                </a>
+                    <a href="index.html" class="namestyle" style=" text-decoration: none;">
+                        <h1 id="title" class="titlenamestyle">
+                            <span style="color: var(--strong);">
+                                {
+                            </span>
+                            "Javier"
+                            <span style="color: var(--strong);">
+                                :
+                            </span>
+                            <span style="color: soft">
+                                "Mart&iacute;nez &ThinSpace;Perales"
+                            </span>
+                            <span style="color: var(--strong);">
+                                }
+                            </span>
+                        </h1>
+                    </a>
 
-                <h2 id="subtitle" class="subtitlenamestyle">
-                    Harmonic Analysis, <br><span style="color: rgb(149, 149, 149)">&</span> Software Development
-                </h2>
+                    <h2 id="subtitle" class="subtitlenamestyle">
+                        Harmonic Analysis, <br><span style="color: rgb(149, 149, 149)">&</span> Software Development
+                    </h2>
 
-                <br>
-
-                <br>
-
-                <div class="subtitlenamestyle" >
-                    <a href ="https://github.com/ckdvk" style="color:var(--green); font-family: 'Courier New', Courier, monospace; text-decoration: none;">GitHub</a>
-                    &emsp;
-                    <a href ="https://arxiv.org/search/?searchtype=author&query=Mart%C3%ADnez-Perales%2C+J+C" style="color:var(--green); font-family: 'Courier New', Courier, monospace; text-decoration: none;">arXiv</a>
-                    <!-- tabulation -->
-                    &emsp;
-
-                    <a href ="https://www.researchgate.net/profile/Javier-Martinez-Perales" style="color:var(--green); font-family: 'Courier New', Courier, monospace; text-decoration: none;">ResearchGate</a>
-                    &emsp;
-                    <a href ="https://scholar.google.com/citations?user=DQQCMk0AAAAJ&hl=es" style="color:var(--green); font-family: 'Courier New', Courier, monospace; text-decoration: none;">Scholar</a>
-                    &emsp;
-                    <a href ="https://www.deviantart.com/j--c" style="color:var(--green); font-family: 'Courier New', Courier, monospace; text-decoration: none;">DeviantART</a>
-                    &emsp;
-                </div>
-            </div>
-            <div class="rightcolumnheader">
-                <a class="titlemailstyle" href="mailto:javier.perales@gtiit.edu.cn">
                     <br>
-                    javier&#8203;.perales&#8203;@gtiit.edu.cn
-                </a>
 
-            <a class="titlemailstyle" href="research.html">
-                <br>
-                Research page
-            </a>
+                    <br>
 
-            <a class="titlemailstyle" href="cv_martinez_perales.pdf" download>
-                <br>
-                Downloadable CV
+                    <div class="subtitlenamestyle">
+                        <a href="https://github.com/ckdvk"
+                            style="color:var(--green); font-family: 'Courier New', Courier, monospace; text-decoration: none;">GitHub</a>
+                        &emsp;
+                        <a href="https://arxiv.org/search/?searchtype=author&query=Mart%C3%ADnez-Perales%2C+J+C"
+                            style="color:var(--green); font-family: 'Courier New', Courier, monospace; text-decoration: none;">arXiv</a>
+                        <!-- tabulation -->
+                        &emsp;
 
-            </a>
+                        <a href="https://www.researchgate.net/profile/Javier-Martinez-Perales"
+                            style="color:var(--green); font-family: 'Courier New', Courier, monospace; text-decoration: none;">ResearchGate</a>
+                        &emsp;
+                        <a href="https://scholar.google.com/citations?user=DQQCMk0AAAAJ&hl=es"
+                            style="color:var(--green); font-family: 'Courier New', Courier, monospace; text-decoration: none;">Scholar</a>
+                        &emsp;
+                        <a href="https://www.deviantart.com/j--c"
+                            style="color:var(--green); font-family: 'Courier New', Courier, monospace; text-decoration: none;">DeviantART</a>
+                        &emsp;
+                    </div>
+                </div>
+                <div class="rightcolumnheader">
+                    <a class="titlemailstyle" href="mailto:javier-cecilio.martinez@cetaqua.com">
+                        <br>
+                        javier&#8203;-cecilio&#8203;.martinez&#8203;@cetaqua.com"
+                    </a>
+
+                    <a class="titlemailstyle" href="research.html">
+                        <br>
+                        Research page
+                    </a>
+
+                    <a class="titlemailstyle" href="cv_martinez_perales.pdf" download>
+                        <br>
+                        Downloadable CV
+
+                    </a>
 
 
-            </div>
+                </div>
 
 
             </header>
 
 
             <main>
-                
+
                 <br>
                 <hr class="hrstyle">
 
-                <div class = "container">
-                    <div class = "leftcolumn">
+                <div class="container">
+                    <div class="leftcolumn">
                         <section id="employment">
-                            <h1 class = "sectionname">
+                            <h1 class="sectionname">
                                 EMPLOYMENT<span style="color:var(--strong)">:{</span>
                             </h1>
-                            <div    id="employmentItems">
+                            <div id="employmentItems">
                             </div>
                             <h1>
                                 <span style="color:var(--strong); font-family: 'Courier New', Courier, monospace;">
@@ -154,11 +161,11 @@
 
                     </div>
 
-                    <div class = "rightcolumn">
+                    <div class="rightcolumn">
 
                         <section id="education">
 
-                            <h1 class = "sectionname">
+                            <h1 class="sectionname">
                                 EDUCATION<span style="color:var(--strong)">:{</span>
                             </h1>
                             <div id="educationItems">
@@ -170,27 +177,27 @@
                             </h1>
 
                         </section>
-                        
 
-                    </section>
-                        
-                    <section  id="skills">
-                        <h1 class = "sectionname">
-                            SKILLS<span style="color:var(--strong)">:[ {</span>
-                        </h1>
-                        <div id="skillsItems">
 
-                        
-                        </div>
-                    <h1>
-                        <span style="color:var(--strong); font-family: 'Courier New', Courier, monospace;">
-                        } ]
-                        </span>
-                    </h1>
-                    </section>
+                        </section>
 
-                        
-                     
+                        <section id="skills">
+                            <h1 class="sectionname">
+                                SKILLS<span style="color:var(--strong)">:[ {</span>
+                            </h1>
+                            <div id="skillsItems">
+
+
+                            </div>
+                            <h1>
+                                <span style="color:var(--strong); font-family: 'Courier New', Courier, monospace;">
+                                    } ]
+                                </span>
+                            </h1>
+                        </section>
+
+
+
                     </div>
                 </div>
             </main>
@@ -203,26 +210,26 @@
     </div>
 
 
- 
+
 
 
 
     <script src="js/effects/olumn-writer.min.js"></script>
     <script>
         new OlumWriter({
-        container: document.getElementById("subtitle"),
-        sentences: ["Harmonic Analysis",  "Software Development"],
-        interval: 3000, // optional (time between each sentence)
-        speed: 1000, // optional (speed of writing each sentence)
-        reverse: false, // optional (enable/disable backward writing), default is false
-        
-    }, );
+            container: document.getElementById("subtitle"),
+            sentences: ["Harmonic Analysis", "Software Development"],
+            interval: 3000, // optional (time between each sentence)
+            speed: 1000, // optional (speed of writing each sentence)
+            reverse: false, // optional (enable/disable backward writing), default is false
+
+        },);
     </script>
 
-    <script type="module"  src="js/texcontent/skills.js"></script>
-    <script type="module"  src="js/texcontent/research.js"></script>
-    <script type="module"  src="js/texcontent/employment.js"></script>
-    <script type="module"  src="js/texcontent/education.js"></script>
+    <script type="module" src="js/texcontent/skills.js"></script>
+    <script type="module" src="js/texcontent/research.js"></script>
+    <script type="module" src="js/texcontent/employment.js"></script>
+    <script type="module" src="js/texcontent/education.js"></script>
     <script src="js/itemscript.js"></script>
 
     <hr class="hrstyle">
@@ -232,5 +239,3 @@
 
 
 </html>
-
-

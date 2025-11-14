@@ -6,7 +6,8 @@
 
 <html lang="en">
 
-    <!-- import { toggleTheme } from 'js/utils/togglestyle.js'; -->
+<!-- import { toggleTheme } from 'js/utils/togglestyle.js'; -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,23 +17,23 @@
     <script>
         var dark = true;
         var strongColor = 'white';
-        var semiStrongColor= '#808080';
-        var softColor= '#a9a9a9';
-        var backgroundColor= '#3b3b3b';
+        var semiStrongColor = '#808080';
+        var softColor = '#a9a9a9';
+        var backgroundColor = '#3b3b3b';
         function toggleTheme() {
 
-            if( dark ) {
+            if (dark) {
                 strongColor = 'black';
-                semiStrongColor= '#808080';
-                softColor= '#a9a9a9';
-                backgroundColor= '#fdfdfd';
+                semiStrongColor = '#808080';
+                softColor = '#a9a9a9';
+                backgroundColor = '#fdfdfd';
                 dark = !dark;
-            } else {     
+            } else {
                 strongColor = 'white';
-                semiStrongColor= '#808080';
-                softColor= '#a9a9a9';
-                backgroundColor= '#3b3b3b';           
-            dark = !dark;
+                semiStrongColor = '#808080';
+                softColor = '#a9a9a9';
+                backgroundColor = '#3b3b3b';
+                dark = !dark;
             }
             document.documentElement.style.setProperty('--strong', strongColor);
             document.documentElement.style.setProperty('--semi-strong', semiStrongColor);
@@ -40,10 +41,12 @@
             document.documentElement.style.setProperty('--background', backgroundColor);
             console.log('CHANGECOLORS() called')
 
-}
+        }
 
     </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-WKKn9H5l5DQ2g2RNhP7dWjLZw0xbCJD77rzMHJ56Vj/Ab9od5M5n2A5NKRUCPc25NjwNnZu3tq4x4+Bc2X9UMQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-WKKn9H5l5DQ2g2RNhP7dWjLZw0xbCJD77rzMHJ56Vj/Ab9od5M5n2A5NKRUCPc25NjwNnZu3tq4x4+Bc2X9UMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- darkgray background -->
     <!-- <script  src="js/utils/togglestyle.js"></script> -->
 </head>
@@ -51,9 +54,9 @@
 <body>
 
     <input type="checkbox" id="theme-toggle" class="theme-toggle" onclick="toggleTheme()" />
-<label for="theme-toggle" class="theme-toggle-label">
-  <span class="theme-toggle-icon"></span>
-</label>
+    <label for="theme-toggle" class="theme-toggle-label">
+        <span class="theme-toggle-icon"></span>
+    </label>
 
 
     <div>
@@ -66,91 +69,96 @@
         <!-- <button  onclick="toggleTheme()"> <i class="fa fa-lightbulb"></i>Toggle Theme</button> -->
 
         <body>
-            
+
 
             <header class="headercontainer">
                 <!-- uses style .namestyle in the style.css file -->
-            <div class="leftcolumnheader" >
+                <div class="leftcolumnheader">
 
-                <a href="index.html" class="namestyle" style=" text-decoration: none;">
-                <h1 id ="title" class="titlenamestyle">
-                    <!-- the above style, but in css -->
-                    <span style="color: var(--strong);">
-                        {
-                        </span>
-                    "Javier"
-                    <span style="color: var(--strong);">
-                        :
-                    </span> 
-                    <span style="color: soft">
-                        "Mart&iacute;nez &ThinSpace;Perales"
-                    </span>
-                    <span style="color: var(--strong);">
-                        }
-                    </span>
-                </h1>
-                </a>
+                    <a href="index.html" class="namestyle" style=" text-decoration: none;">
+                        <h1 id="title" class="titlenamestyle">
+                            <!-- the above style, but in css -->
+                            <span style="color: var(--strong);">
+                                {
+                            </span>
+                            "Javier"
+                            <span style="color: var(--strong);">
+                                :
+                            </span>
+                            <span style="color: soft">
+                                "Mart&iacute;nez &ThinSpace;Perales"
+                            </span>
+                            <span style="color: var(--strong);">
+                                }
+                            </span>
+                        </h1>
+                    </a>
 
-                <h2 id="subtitle" class="subtitlenamestyle">
-                    Harmonic Analysis <br><span style="color: rgb(149, 149, 149)">&</span> Software Development
-                </h2>
-
-
-                <br>
-
-                <br>
-                <!-- align below div to bottom of this div -->
+                    <h2 id="subtitle" class="subtitlenamestyle">
+                        Harmonic Analysis <br><span style="color: rgb(149, 149, 149)">&</span> Software Development
+                    </h2>
 
 
-
-                
-                <div class="subtitlenamestyle" >
-                    <a href ="https://github.com/ckdvk" style="color:var(--green); font-family: 'Courier New', Courier, monospace; text-decoration: none;">GitHub</a>
-                    &emsp;
-                    <a href ="https://arxiv.org/search/?searchtype=author&query=Mart%C3%ADnez-Perales%2C+J+C" style="color:var(--green); font-family: 'Courier New', Courier, monospace; text-decoration: none;">arXiv</a>
-                    <!-- tabulation -->
-                    &emsp;
-
-                    <a href ="https://www.researchgate.net/profile/Javier-Martinez-Perales" style="color:var(--green); font-family: 'Courier New', Courier, monospace; text-decoration: none;">ResearchGate</a>
-                    &emsp;
-                    <a href ="https://scholar.google.com/citations?user=DQQCMk0AAAAJ&hl=es" style="color:var(--green); font-family: 'Courier New', Courier, monospace; text-decoration: none;">Scholar</a>
-                    &emsp;
-                    <a href ="https://orcid.org/0000-0001-8820-8399" style="color:var(--green); font-family: 'Courier New', Courier, monospace; text-decoration: none;">ORCiD</a>
-                    &emsp;
-                </div>
-
-            </div>
-            <div class="rightcolumnheader">
-                <!-- hide the underline and colour of the link -->
-                <a class="titlemailstyle" href="mailto:javier.perales@gtiit.edu.cn">
                     <br>
-                    javier.&#8203;perales&#8203;@gtiit.edu.cn
-                    <!--the above, but hyphenable -->
-                </a>
-                <!-- <a class="titlemailstyle" href="https://sites.google.com/view/javiermartinez/home">
+
+                    <br>
+                    <!-- align below div to bottom of this div -->
+
+
+
+
+                    <div class="subtitlenamestyle">
+                        <a href="https://github.com/ckdvk"
+                            style="color:var(--green); font-family: 'Courier New', Courier, monospace; text-decoration: none;">GitHub</a>
+                        &emsp;
+                        <a href="https://arxiv.org/search/?searchtype=author&query=Mart%C3%ADnez-Perales%2C+J+C"
+                            style="color:var(--green); font-family: 'Courier New', Courier, monospace; text-decoration: none;">arXiv</a>
+                        <!-- tabulation -->
+                        &emsp;
+
+                        <a href="https://www.researchgate.net/profile/Javier-Martinez-Perales"
+                            style="color:var(--green); font-family: 'Courier New', Courier, monospace; text-decoration: none;">ResearchGate</a>
+                        &emsp;
+                        <a href="https://scholar.google.com/citations?user=DQQCMk0AAAAJ&hl=es"
+                            style="color:var(--green); font-family: 'Courier New', Courier, monospace; text-decoration: none;">Scholar</a>
+                        &emsp;
+                        <a href="https://orcid.org/0000-0001-8820-8399"
+                            style="color:var(--green); font-family: 'Courier New', Courier, monospace; text-decoration: none;">ORCiD</a>
+                        &emsp;
+                    </div>
+
+                </div>
+                <div class="rightcolumnheader">
+                    <!-- hide the underline and colour of the link -->
+                    <a class="titlemailstyle" href="mailto:javicemarpe@gmail.com">
+                        <br>
+                        javicemarpe&#8203;@gmail.com
+                        <!--the above, but hyphenable -->
+                    </a>
+                    <!-- <a class="titlemailstyle" href="https://sites.google.com/view/javiermartinez/home">
                     <br>
 
                     Research page
                 </a> 
                 link to trial.html page-->
-            <a class="titlemailstyle" href="index.html">
-                <br>
-                Home page
-            </a>
-        
-            <a class="titlemailstyle" href="cv_martinez_perales.pdf" download>
-                <br>
-                Downloadable CV
-            </a>
-            
-        </div>
-            
+                    <a class="titlemailstyle" href="index.html">
+                        <br>
+                        Home page
+                    </a>
+
+                    <a class="titlemailstyle" href="cv_martinez_perales.pdf" download>
+                        <br>
+                        Downloadable CV
+                    </a>
+
+                </div>
 
 
-            <!-- a horizontal line covering the whole screen -->
+
+                <!-- a horizontal line covering the whole screen -->
 
 
-<!-- 
+                <!-- 
             redcolor
             <hr class="hrstyle", style="color: rgb(184, 7, 7);" -->
 
@@ -158,12 +166,12 @@
 
 
             <main>
-                
+
                 <br>
                 <hr class="hrstyle">
 
-                <div class = "container">
-                    <div class = "leftcolumn">
+                <div class="container">
+                    <div class="leftcolumn">
                         <!-- <section id="employment">
                             <h1 class = "sectionname">
                                 EMPLOYMENT<span style="color:var(--strong)">:{</span>
@@ -193,18 +201,25 @@
                         </section> -->
 
                         <section>
-                            <h1 class = "sectionname">
+                            <h1 class="sectionname">
                                 ABOUT ME
                             </h1>
-                            <div style="color:var(--strong); font-family: 'Courier New', Courier, monospace; margin: 4%;">
-                                
-                            I obtained my PhD in Mathematics and Statistics from the <a href="https://www.ehu.eus/es/home" style = "text-decoration: none;">University of the Basque Country</a> at the <a href="http://www.bcamath.org/es/" style = "text-decoration: none;">BCAM - Basque Center for Applied Mathematics</a> under the supervision of Carlos Pérez Moreno (Ikerbasque Research Professor, UPV/EHU and BCAM) and Luz Roncal (Ikerbasque Research Fellow, BCAM). 
+                            <div
+                                style="color:var(--strong); font-family: 'Courier New', Courier, monospace; margin: 4%;">
+
+                                I obtained my PhD in Mathematics and Statistics from the <a
+                                    href="https://www.ehu.eus/es/home" style="text-decoration: none;">University of the
+                                    Basque Country</a> at the <a href="http://www.bcamath.org/es/"
+                                    style="text-decoration: none;">BCAM - Basque Center for Applied Mathematics</a>
+                                under the supervision of Carlos Pérez Moreno (Ikerbasque Research Professor, UPV/EHU and
+                                BCAM) and Luz Roncal (Ikerbasque Research Fellow, BCAM).
                                 <br>
 
                                 <br>
-                            <div style="color:var(--strong); font-family: 'Courier New', Courier, monospace;">
-                            <a  href= "https://bird.bcamath.org/handle/20.500.11824/1206" style = "text-decoration: none;">Here you can find my PhD thesis.</a>
-                            </div>
+                                <div style="color:var(--strong); font-family: 'Courier New', Courier, monospace;">
+                                    <a href="https://bird.bcamath.org/handle/20.500.11824/1206"
+                                        style="text-decoration: none;">Here you can find my PhD thesis.</a>
+                                </div>
 
                             </div>
                         </section>
@@ -213,60 +228,79 @@
 
 
 
-                        <section >
-                            <h1 class = "sectionname">
+                        <section>
+                            <h1 class="sectionname">
                                 OTHERS
                             </h1>
-                            <div style="color:var(--strong); font-family: 'Courier New', Courier, monospace; margin: 4%;">
-                                
-                                I studied my Master and Bachelor's degrees at Universidad de Málaga. Here you can find my Master and Bachelor theses:
+                            <div
+                                style="color:var(--strong); font-family: 'Courier New', Courier, monospace; margin: 4%;">
+
+                                I studied my Master and Bachelor's degrees at Universidad de Málaga. Here you can find
+                                my Master and Bachelor theses:
                                 <!-- a list  with the two following lines as items -->
 
                                 <ul>
-                                    
+
                                     <li>
-                                        Master Thesis: <a href="https://drive.google.com/file/d/0B-XkTHdwwkV5SDBrS2RiY0hhUjg/view" style = "text-decoration: none;"> Factorización y ceros de funciones en espacios de funciones analíticas</a>
+                                        Master Thesis: <a
+                                            href="https://drive.google.com/file/d/0B-XkTHdwwkV5SDBrS2RiY0hhUjg/view"
+                                            style="text-decoration: none;"> Factorización y ceros de funciones en
+                                            espacios de funciones analíticas</a>
                                     </li>
                                     <br>
 
                                     <li>
-                                        Bachelor Thesis: <a href="https://drive.google.com/file/d/0B-XkTHdwwkV5QXYydm1BMHFCeHM/view" style = "text-decoration: none;">La integral de Henstock-Kurzweil</a>
+                                        Bachelor Thesis: <a
+                                            href="https://drive.google.com/file/d/0B-XkTHdwwkV5QXYydm1BMHFCeHM/view"
+                                            style="text-decoration: none;">La integral de Henstock-Kurzweil</a>
                                     </li>
 
                                 </ul>
-                                I also participated as editor at the <a href="https://temat.es/" style = " text-decoration: none;"><b>TEMat</b></a> journal promoted by the <a href="http://www.anem.es/"  style = " text-decoration: none;"><b>ANEM</b></a> until 2022. 
+                                I also participated as editor at the <a href="https://temat.es/"
+                                    style=" text-decoration: none;"><b>TEMat</b></a> journal promoted by the <a
+                                    href="http://www.anem.es/" style=" text-decoration: none;"><b>ANEM</b></a> until
+                                2022.
                                 <br>
-                                Besides, I have been co-organizer of the <a href="https://sites.google.com/view/lightseminar"  style = " text-decoration: none;"><b>LIGHT seminar</b></a> at BCAM, from its foundation in 2018 until 2020.
- 
+                                Besides, I have been co-organizer of the <a
+                                    href="https://sites.google.com/view/lightseminar"
+                                    style=" text-decoration: none;"><b>LIGHT seminar</b></a> at BCAM, from its
+                                foundation in 2018 until 2020.
+
                             </div>
                         </section>
 
 
-                        <section >
-                            <h1 class = "sectionname">
+                        <section>
+                            <h1 class="sectionname">
                                 Dissemination
                             </h1>
-                            <div style="color:var(--strong); font-family: 'Courier New', Courier, monospace; margin: 4%;">
-                                
+                            <div
+                                style="color:var(--strong); font-family: 'Courier New', Courier, monospace; margin: 4%;">
+
                                 <ul>
-                                    
+
                                     <li>
-                                        
-                                        <a href="https://temat.es/articulo/2017-p15/2017-p15-pdf" style = "text-decoration: none;">La integral de Henstock-Kurzweil y el segundo teorema fundamental del cálculo</a>, TEMat 1 (2017), pp. 15-23
+
+                                        <a href="https://temat.es/articulo/2017-p15/2017-p15-pdf"
+                                            style="text-decoration: none;">La integral de Henstock-Kurzweil y el segundo
+                                            teorema fundamental del cálculo</a>, TEMat 1 (2017), pp. 15-23
                                     </li>
                                     <br>
                                     <li>
-                                        <a href="https://temat.es/monograficos/article/view/vol1-p47/vol1-p47-pdf" style = "text-decoration: none;">Four different approaches to the fractional Laplacian</a>, TEMat: monográficos, 1 (2020): Artículos de las VIII y IX Escuela-Taller de Análisis Funcional, pp. 47-60
+                                        <a href="https://temat.es/monograficos/article/view/vol1-p47/vol1-p47-pdf"
+                                            style="text-decoration: none;">Four different approaches to the fractional
+                                            Laplacian</a>, TEMat: monográficos, 1 (2020): Artículos de las VIII y IX
+                                        Escuela-Taller de Análisis Funcional, pp. 47-60
                                     </li>
 
                                 </ul>
-                            
+
                         </section>
 
 
-                    </div> 
+                    </div>
 
-                    <div class = "rightcolumn">
+                    <div class="rightcolumn">
 
                         <!-- <section id="education">
 
@@ -282,7 +316,6 @@
                             </h1>
 
                         </section> -->
-                                                
 
 
 
@@ -291,15 +324,23 @@
 
 
 
-                        
-                        <section   id="research">
-                            <h1 class = "sectionname">
+
+
+                        <section id="research">
+                            <h1 class="sectionname">
                                 RESEARCH
                             </h1>
-                            <div style="color:var(--strong); font-family: 'Courier New', Courier, monospace; margin: 4%">
-                                My research is focused in the study of weighted generalized Poincaré-type inequalities by means of techniques of Harmonic Analysis. More specifically, I have mainly been studying self-improving results as a tool for obtaining weighted Poincaré-Sobolev inequalities both in the Euclidean setting and the abstract context of metric measure spaces with the so-called doubling property. Fractional and classical Poincaré-Sobolev inequalities, and also BMO type inequalities, are among the inequalities I study.
+                            <div
+                                style="color:var(--strong); font-family: 'Courier New', Courier, monospace; margin: 4%">
+                                My research is focused in the study of weighted generalized Poincaré-type inequalities
+                                by means of techniques of Harmonic Analysis. More specifically, I have mainly been
+                                studying self-improving results as a tool for obtaining weighted Poincaré-Sobolev
+                                inequalities both in the Euclidean setting and the abstract context of metric measure
+                                spaces with the so-called doubling property. Fractional and classical Poincaré-Sobolev
+                                inequalities, and also BMO type inequalities, are among the inequalities I study.
                             </div>
-                            <h3 style="color:var(--green); font-family: 'Courier New', Courier, monospace;">Publications list:</h3>
+                            <h3 style="color:var(--green); font-family: 'Courier New', Courier, monospace;">Publications
+                                list:</h3>
                             <div id="researchItems">
                             </div>
                         </section>
@@ -326,17 +367,17 @@
     <script src="js/effects/olumn-writer.min.js"></script>
     <script>
         new OlumWriter({
-        container: document.getElementById("subtitle"),
-        sentences: ["Harmonic Analysis", "Software Development"],
-        interval: 3000, // optional (time between each sentence)
-        speed: 1000, // optional (speed of writing each sentence)
-        reverse: false, // optional (enable/disable backward writing), default is false
-        
-    }, );
+            container: document.getElementById("subtitle"),
+            sentences: ["Harmonic Analysis", "Software Development"],
+            interval: 3000, // optional (time between each sentence)
+            speed: 1000, // optional (speed of writing each sentence)
+            reverse: false, // optional (enable/disable backward writing), default is false
+
+        },);
     </script>
 
     <!-- <script type="module"  src="js/texcontent/skills.js"></script> -->
-    <script type="module"  src="js/texcontent/research.js"></script>
+    <script type="module" src="js/texcontent/research.js"></script>
     <!-- <script type="module"  src="js/texcontent/employment.js"></script>
     <script type="module"  src="js/texcontent/education.js"></script> -->
     <script src="js/itemscript.js"></script>
@@ -348,5 +389,3 @@
 
 
 </html>
-
-
