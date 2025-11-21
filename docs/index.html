@@ -212,7 +212,10 @@
                     var elemento = document.getElementById("fechaFichero");
 
                     var fecha = new Date(document.lastModified);
-                    var fechaFormateada = fecha.toLocaleDateString();
+                    var year = fecha.getFullYear();
+                    var month = String(fecha.getMonth() + 1).padStart(2, '0');
+                    var day = String(fecha.getDate()).padStart(2, '0');
+                    var fechaFormateada = year + '/' + month + '/' + day;
 
                     elemento.textContent = fechaFormateada;
                 </script>
