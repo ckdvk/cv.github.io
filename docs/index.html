@@ -133,6 +133,7 @@
                     </a>
 
 
+
                 </div>
 
 
@@ -202,8 +203,19 @@
                 </div>
             </main>
             <footer>
-                <p>
-                </p>
+                <br>
+                <a class="titlemailstyle">
+                    Last update: <span id="fechaFichero"></span>
+                </a>
+
+                <script>
+                    var elemento = document.getElementById("fechaFichero");
+
+                    var fecha = new Date(document.lastModified);
+                    var fechaFormateada = fecha.toLocaleDateString();
+
+                    elemento.textContent = fechaFormateada;
+                </script>
             </footer>
         </body>
 

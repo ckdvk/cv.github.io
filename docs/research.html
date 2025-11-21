@@ -151,6 +151,7 @@
                         Downloadable CV
                     </a>
 
+
                 </div>
 
 
@@ -353,9 +354,22 @@
             </main>
             <footer>
                 <p>
-                    <!-- My First Footer -->
+                    <br>
+                    <a class="titlemailstyle">
+                        Last update: <span id="fechaFichero"></span>
+                    </a>
+
+                    <script>
+                        var elemento = document.getElementById("fechaFichero");
+
+                        var fecha = new Date(document.lastModified);
+                        var fechaFormateada = fecha.toLocaleDateString();
+
+                        elemento.textContent = fechaFormateada;
+                    </script>
                 </p>
             </footer>
+
         </body>
 
     </div>
